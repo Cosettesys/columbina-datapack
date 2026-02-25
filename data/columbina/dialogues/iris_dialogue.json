@@ -1,0 +1,96 @@
+{
+  "initializationAction": [
+  "c.npc.set_chatting();",
+  "q.run_command('team add npc');",
+  "q.run_command('team modify npc collisionRule never');",
+  "q.player.username() == 'Novulyf' ? q.run_command('execute at ' + q.player.username() + ' run team join npc @e[type=cobblemon:npc,limit=1,sort=nearest,distance=..3]') : '';"
+  ],
+  "speakers": {
+    "npc": {
+      "name": {
+        "type": "expression",
+        "expression": "q.npc.name"
+      },
+      "face": "q.npc.face();",
+      "gibber": {}
+    }
+  },
+  "pages": [
+    {
+      "id": "intro",
+      "speaker": "npc",
+      "lines": [
+        "Hé ! Bienvenue sur ce serveur !",
+        "Je suis Iris, Maître de la Ligue Pokémon.",
+        "Avant de commencer ton aventure, laisse-moi t'expliquer quelques règles importantes !"
+      ],
+      "input": {
+        "type": "option",
+        "vertical": true,
+        "options": [
+          {
+            "text": "Règles de comportement",
+            "value": "comportement",
+            "action": "q.dialogue.set_page('comportement');"
+          },
+          {
+            "text": "Règles Pokémon",
+            "value": "pokemon",
+            "action": "q.dialogue.set_page('pokemon');"
+          },
+          {
+            "text": "Informations générales",
+            "value": "infos",
+            "action": "q.dialogue.set_page('infos');"
+          },
+          {
+            "text": "C'est bon, j'ai compris !",
+            "value": "fin",
+            "action": "q.dialogue.set_page('fin');"
+          }
+        ]
+      }
+    },
+    {
+      "id": "comportement",
+      "speaker": "npc",
+      "lines": [
+        "Règle n°1 : Respecte tous les joueurs !",
+        "Insultes, harcèlement et provocations sont interdits.",
+        "Règle n°2 : Pas de triche ni de exploit de bugs.",
+        "Règle n°3 : Écoute les admins, leurs décisions sont finales.",
+		"Règle n°4 : Fuck Marlnoe"
+      ],
+      "input": "q.dialogue.set_page('intro');"
+    },
+    {
+      "id": "pokemon",
+      "speaker": "npc",
+      "lines": [
+        "Règle n°1 : Ne vole pas les Pokémon des autres joueurs !",
+        "Règle n°2 : Les combats PvP Pokémon doivent être consentis.",
+        "Règle n°3 : Ne spam pas les captures dans les zones des autres."
+      ],
+      "input": "q.dialogue.set_page('intro');"
+    },
+    {
+      "id": "infos",
+      "speaker": "npc",
+      "lines": [
+        "Le serveur tourne sur Cobblemon, un mod Pokémon pour Minecraft.",
+        "Tu peux obtenir ton Pokédex en parlant au Professeur Chen !",
+        "Des événements sont organisés régulièrement par les admins."
+      ],
+      "input": "q.dialogue.set_page('intro');"
+    },
+    {
+      "id": "fin",
+      "speaker": "npc",
+      "lines": [
+        "Parfait ! Tu es prêt pour l'aventure.",
+        "Bonne chance, Dresseur !"
+      ],
+      "input": "q.dialogue.close();"
+    }
+  ]
+}

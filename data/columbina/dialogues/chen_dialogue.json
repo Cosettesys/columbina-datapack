@@ -1,0 +1,103 @@
+{
+  "initializationAction": [
+  "c.npc.set_chatting();",
+  "q.run_command('team add npc');",
+  "q.run_command('team modify npc collisionRule never');",
+  "q.player.username() == 'Novulyf' ? q.run_command('execute at ' + q.player.username() + ' run team join npc @e[type=cobblemon:npc,limit=1,sort=nearest,distance=..3]') : '';"
+  ],
+  "speakers": {
+    "npc": {
+      "name": {
+        "type": "expression",
+        "expression": "q.npc.name"
+      },
+      "face": "q.npc.face();",
+      "gibber": {}
+    },
+    "player": {
+      "face": "q.player.face();",
+      "name": {
+        "type": "expression",
+        "expression": "q.player.username"
+      }
+    }
+  },
+  "pages": [
+    {
+      "id": "intro",
+      "speaker": "npc",
+      "lines": [
+        "Ah, bonjour ! Je m'attendais à te voir.",
+        "Je suis le Professeur Chen, chercheur spécialisé dans les Pokémon."
+      ],
+      "input": "q.dialogue.set_page('monde');"
+    },
+    {
+      "id": "monde",
+      "speaker": "npc",
+      "lines": [
+        "Notre monde est peuplé de créatures extraordinaires : les Pokémon.",
+        "Certains vivent dans les herbes hautes, d'autres dans les mers ou les grottes...",
+        "Nous en savons encore si peu sur eux !"
+      ],
+      "input": "q.dialogue.set_page('question');"
+    },
+    {
+      "id": "question",
+      "speaker": "npc",
+      "lines": [
+        "J'ai consacré ma vie à les étudier, mais je ne peux pas tout faire seul.",
+        "Accepterais-tu de m'aider dans mes recherches ?"
+      ],
+      "input": {
+        "type": "option",
+        "vertical": true,
+        "options": [
+          {
+            "text": "Bien sûr, Professeur !",
+            "value": "yes",
+            "action": "q.player.has_tag('recu_pokedex_chen') ? q.dialogue.set_page('deja_recu') : q.dialogue.set_page('accepte');"
+          },
+          {
+            "text": "Peut-être une autre fois...",
+            "value": "no",
+            "action": "q.dialogue.set_page('refuse');"
+          }
+        ]
+      }
+    },
+    {
+      "id": "accepte",
+      "speaker": "npc",
+      "lines": [
+        "Formidable ! Je savais que je pouvais compter sur toi.",
+        "Prends ce Pokédex — il enregistrera chaque Pokémon que tu croiseras.",
+        "Bonne chance dans ton aventure !"
+      ],
+      "input": [
+        "q.run_command('execute unless entity @a[tag=recu_pokedex_chen,name=' + q.player.username() + '] run give ' + q.player.username() + ' cobblemon:pokedex_red 1');",
+        "q.run_command('execute unless entity @a[tag=recu_pokedex_chen,name=' + q.player.username() + '] run tag @a[name=' + q.player.username() + '] add recu_pokedex_chen');",
+        "q.dialogue.close();"
+      ]
+    },
+    {
+      "id": "refuse",
+      "speaker": "npc",
+      "lines": [
+        "Je comprends. Ma porte te sera toujours ouverte.",
+        "Reviens me voir quand tu seras prêt !"
+      ],
+      "input": "q.dialogue.close();"
+    },
+	{
+      "id": "deja_recu",
+      "speaker": "npc",
+      "lines": [
+        "Ah, tu as déjà reçu ton Pokédex !",
+        "Continue à explorer et à compléter ta collection.",
+        "Bonne chance, Dresseur !"
+      ],
+      "input": "q.dialogue.close();"
+    }
+  ]
+}
