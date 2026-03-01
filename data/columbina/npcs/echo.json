@@ -1,0 +1,17 @@
+{
+  "hitbox": "player",
+  "names": ["Écho"],
+  "interaction": {
+    "type": "dialogue",
+    "dialogue": "columbina:echo_dialogue"
+  },
+  "ai": [
+    {
+      "type": "apply_behaviours",
+      "behaviours": ["cobblemon:core", "cobblemon:looks_at_players"]
+    }
+  ],
+  "canDespawn": false,
+  "isInvulnerable": true,
+  "allowProjectileHits": false
+}

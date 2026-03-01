@@ -1,6 +1,7 @@
 {
   "initializationAction": [
   "c.npc.set_chatting();",
+  "c.npc.play_animation('wave');",
   "q.run_command('team add npc');",
   "q.run_command('team modify npc collisionRule never');",
   "q.player.username() == 'Novulyf' ? q.run_command('execute at ' + q.player.username() + ' run team join npc @e[type=cobblemon:npc,limit=1,sort=nearest,distance=..3]') : '';"

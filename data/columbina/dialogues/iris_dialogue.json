@@ -1,9 +1,10 @@
 {
   "initializationAction": [
-  "c.npc.set_chatting();",
-  "q.run_command('team add npc');",
-  "q.run_command('team modify npc collisionRule never');",
-  "q.player.username() == 'Novulyf' ? q.run_command('execute at ' + q.player.username() + ' run team join npc @e[type=cobblemon:npc,limit=1,sort=nearest,distance=..3]') : '';"
+    "c.npc.set_chatting();",
+    "c.npc.play_animation('wave');",
+    "q.run_command('team add npc');",
+    "q.run_command('team modify npc collisionRule never');",
+    "q.player.username() == 'Novulyf' ? q.run_command('execute at ' + q.player.username() + ' run team join npc @e[type=cobblemon:npc,limit=1,sort=nearest,distance=..3]') : '';"
   ],
   "speakers": {
     "npc": {
@@ -23,6 +24,14 @@
         "Hé ! Bienvenue sur ce serveur !",
         "Je suis Iris, Maître de la Ligue Pokémon.",
         "Avant de commencer ton aventure, laisse-moi t'expliquer quelques règles importantes !"
+      ],
+      "input": "q.dialogue.set_page('menu');"
+    },
+    {
+      "id": "menu",
+      "speaker": "npc",
+      "lines": [
+        "Sur quoi veux-tu des informations ?"
       ],
       "input": {
         "type": "option",
@@ -57,11 +66,11 @@
       "lines": [
         "Règle n°1 : Respecte tous les joueurs !",
         "Insultes, harcèlement et provocations sont interdits.",
-        "Règle n°2 : Pas de triche ni de exploit de bugs.",
+        "Règle n°2 : Pas de triche ni d'exploit de bugs.",
         "Règle n°3 : Écoute les admins, leurs décisions sont finales.",
-		"Règle n°4 : Fuck Marlnoe"
+        "Règle n°4 : Fuck Marlnoe"
       ],
-      "input": "q.dialogue.set_page('intro');"
+      "input": "q.dialogue.set_page('menu');"
     },
     {
       "id": "pokemon",
@@ -71,17 +80,18 @@
         "Règle n°2 : Les combats PvP Pokémon doivent être consentis.",
         "Règle n°3 : Ne spam pas les captures dans les zones des autres."
       ],
-      "input": "q.dialogue.set_page('intro');"
+      "input": "q.dialogue.set_page('menu');"
     },
     {
       "id": "infos",
       "speaker": "npc",
       "lines": [
-        "Le serveur tourne sur Cobblemon, un mod Pokémon pour Minecraft.",
-        "Tu peux obtenir ton Pokédex en parlant au Professeur Chen !",
-        "Des événements sont organisés régulièrement par les admins."
+        "Le serveur utilise Cobblemon, un mod qui ajoute les Pokémons dans Minecraft.",
+        "N'oublie pas d'aller voir le professeur Chen pour obtenir ton Pokédex !",
+        "Des événements seront organisés régulièrement par les admins.",
+        "Hésite pas à aller sur le discord pour te tenir au courant !."
       ],
-      "input": "q.dialogue.set_page('intro');"
+      "input": "q.dialogue.set_page('menu');"
     },
     {
       "id": "fin",

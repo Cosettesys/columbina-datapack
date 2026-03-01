@@ -1,0 +1,256 @@
+{
+  "initializationAction": [
+    "c.npc.set_chatting();",
+    "c.npc.play_animation('wave');",
+    "q.run_command('team add npc');",
+    "q.run_command('team modify npc collisionRule never');",
+    "q.player.username() == 'Novulyf' ? q.run_command('execute unless entity @e[type=cobblemon:npc,team=npc,distance=..3] at ' + q.player.username() + ' run team join npc @e[type=cobblemon:npc,limit=1,sort=nearest,distance=..3]') : '';"
+  ],
+  "speakers": {
+    "npc": {
+      "name": {
+        "type": "expression",
+        "expression": "q.npc.name"
+      },
+      "face": "q.npc.face();",
+      "gibber": {}
+    },
+    "player": {
+      "face": "q.player.face();",
+      "name": {
+        "type": "expression",
+        "expression": "q.player.username"
+      }
+    }
+  },
+  "pages": [
+    {
+      "id": "intro",
+      "speaker": "npc",
+      "lines": [
+        "Ah, te voilà ! Je me demandais quand tu passerais.",
+        "Je m'appelle Écho. Je garde un œil sur les Dresseurs qui cherchent à se surpasser."
+      ],
+      "input": "q.dialogue.set_page('menu');"
+    },
+    {
+      "id": "menu",
+      "speaker": "npc",
+      "lines": [
+        "Qu'est-ce que je peux faire pour toi ?"
+      ],
+      "input": {
+        "type": "option",
+        "vertical": true,
+        "options": [
+          {
+            "text": "Une quête pour aujourd'hui",
+            "value": "quete",
+            "action": "q.player.has_tag('dailyquest') ? q.dialogue.set_page('quete_deja_prise') : q.dialogue.set_page('quete_choix');"
+          },
+          {
+            "text": "Rendre ma quête",
+            "value": "rendre",
+            "action": "q.player.has_tag('dailyquest') ? q.dialogue.set_page('rendre_choix') : q.dialogue.set_page('pas_de_quete');"
+          },
+          {
+            "text": "Qui es-tu ?",
+            "value": "lore",
+            "action": "q.dialogue.set_page('lore');"
+          },
+          {
+            "text": "Rien, au revoir.",
+            "value": "fin",
+            "action": "q.dialogue.set_page('fin');"
+          }
+        ]
+      }
+    },
+    {
+      "id": "quete_choix",
+      "speaker": "npc",
+      "lines": [
+        "Voyons ce que j'ai pour toi aujourd'hui...",
+        "Choisis le type de défi qui te convient :"
+      ],
+      "input": {
+        "type": "option",
+        "vertical": true,
+        "options": [
+          {
+            "text": "Défi de capture",
+            "value": "capture",
+            "action": "q.dialogue.set_page('quete_capture');"
+          },
+          {
+            "text": "Défi de combat",
+            "value": "combat",
+            "action": "q.dialogue.set_page('quete_combat');"
+          },
+          {
+            "text": "Retour",
+            "value": "retour",
+            "action": "q.dialogue.set_page('menu');"
+          }
+        ]
+      }
+    },
+    {
+      "id": "quete_capture",
+      "speaker": "npc",
+      "lines": [
+        "Bien. Aujourd'hui tu devras capturer des Pokémon d'un type bien précis.",
+        "Montre-moi que tu sais choisir tes cibles !"
+      ],
+      "input": [
+        "q.run_command('tag ' + q.player.username() + ' add dailyquest');",
+        "q.run_command('ftbquests complete_task ' + q.player.username() + ' ID_TRIGGER_CAPTURE');",
+        "q.dialogue.set_page('quete_acceptee');"
+      ]
+    },
+    {
+      "id": "quete_combat",
+      "speaker": "npc",
+      "lines": [
+        "Un défi de combat, j'aime ça !",
+        "Tu devras mettre KO un certain nombre de Pokémon sauvages aujourd'hui.",
+        "Ne relâche pas ta garde !"
+      ],
+      "input": [
+        "q.run_command('tag ' + q.player.username() + ' add dailyquest');",
+        "q.run_command('ftbquests complete_task ' + q.player.username() + ' ID_TRIGGER_COMBAT');",
+        "q.dialogue.set_page('quete_acceptee');"
+      ]
+    },
+    {
+      "id": "quete_acceptee",
+      "speaker": "npc",
+      "lines": [
+        "Parfait ! Ta quête est enregistrée.",
+        "Reviens me voir une fois que tu l'auras accomplie.",
+        "Bonne chance, Dresseur !"
+      ],
+      "input": "q.dialogue.close();"
+    },
+    {
+      "id": "quete_deja_prise",
+      "speaker": "npc",
+      "lines": [
+        "Tu as déjà une quête en cours pour aujourd'hui !",
+        "Accomplis-la d'abord, et reviens me voir pour la rendre."
+      ],
+      "input": "q.dialogue.set_page('menu');"
+    },
+    {
+      "id": "rendre_choix",
+      "speaker": "npc",
+      "lines": [
+        "Tu es de retour ! Voyons si tu as accompli ta mission..."
+      ],
+      "input": {
+        "type": "option",
+        "vertical": true,
+        "options": [
+          {
+            "text": "Rendre le défi de capture",
+            "value": "rendre_capture",
+            "action": "q.dialogue.set_page('rendre_capture');"
+          },
+          {
+            "text": "Rendre le défi de combat",
+            "value": "rendre_combat",
+            "action": "q.dialogue.set_page('rendre_combat');"
+          },
+          {
+            "text": "Retour",
+            "value": "retour",
+            "action": "q.dialogue.set_page('menu');"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rendre_capture",
+      "speaker": "npc",
+      "lines": [
+        "Impressionnant ! Ces captures témoignent de ta maîtrise.",
+        "Ton équipe va adorer ça. Voici ta récompense !"
+      ],
+      "input": [
+        "q.run_command('ftbquests complete_task ' + q.player.username() + ' ID_RECOMPENSE_CAPTURE');",
+        "q.run_command('tag ' + q.player.username() + ' remove dailyquest');",
+        "q.dialogue.set_page('quete_rendue');"
+      ]
+    },
+    {
+      "id": "rendre_combat",
+      "speaker": "npc",
+      "lines": [
+        "Tu as bien combattu aujourd'hui !",
+        "Ces victoires comptent pour ton équipe. Voici ta récompense !"
+      ],
+      "input": [
+        "q.run_command('ftbquests complete_task ' + q.player.username() + ' ID_RECOMPENSE_COMBAT');",
+        "q.run_command('tag ' + q.player.username() + ' remove dailyquest');",
+        "q.dialogue.set_page('quete_rendue');"
+      ]
+    },
+    {
+      "id": "quete_rendue",
+      "speaker": "npc",
+      "lines": [
+		"Bien joué ! Tu as un permis d'entrée au safari.",
+		"Son utilisation est unique et non cumulable, donc pense à l'utiliser avant ta prochaine quête.",
+		"À demain pour une nouvelle mission.",
+        "Continue comme ça et ton équipe sera imbattable !"
+      ],
+      "input": [
+	  "q.run_command('tag ' + q.player.username() + ' add safari_permit');",
+	  "q.dialogue.close();"
+	  ]
+    },
+    {
+      "id": "pas_de_quete",
+      "speaker": "npc",
+      "lines": [
+        "Tu n'as pas de quête en cours pour aujourd'hui.",
+        "Tu veux en prendre une ?"
+      ],
+      "input": {
+        "type": "option",
+        "vertical": true,
+        "options": [
+          {
+            "text": "Oui !",
+            "value": "oui",
+            "action": "q.dialogue.set_page('quete_choix');"
+          },
+          {
+            "text": "Non, peut-être plus tard.",
+            "value": "non",
+            "action": "q.dialogue.set_page('fin');"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lore",
+      "speaker": "npc",
+      "lines": [
+        "Je parcours les régions depuis des années, à la recherche de Dresseurs prometteurs.",
+        "J'ai vu des équipes s'effondrer et d'autres s'élever au sommet.",
+        "Ce qui fait la différence ? La constance. Un bon Dresseur s'améliore chaque jour.",
+        "C'est pourquoi je propose ces défis quotidiens. Petit à petit, on devient grand."
+      ],
+      "input": "q.dialogue.set_page('menu');"
+    },
+    {
+      "id": "fin",
+      "speaker": "npc",
+      "lines": [
+        "À bientôt, Dresseur. N'oublie pas — chaque jour compte !"
+      ],
+      "input": "q.dialogue.close();"
+    }
+  ]
+}

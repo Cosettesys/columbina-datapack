@@ -1,0 +1,85 @@
+{
+  "initializationAction": [
+    "c.npc.set_chatting();",
+    "q.run_command('team add npc');",
+    "q.run_command('team modify npc collisionRule never');",
+    "q.player.username() == 'Novulyf' ? q.run_command('execute unless entity @e[type=cobblemon:npc,team=npc,distance=..3] at ' + q.player.username() + ' run team join npc @e[type=cobblemon:npc,limit=1,sort=nearest,distance=..3]') : '';"
+  ],
+  "speakers": {
+    "npc": {
+      "name": {
+        "type": "expression",
+        "expression": "q.npc.name"
+      },
+      "face": "q.npc.face();",
+      "gibber": {}
+    },
+    "player": {
+      "face": "q.player.face();",
+      "name": {
+        "type": "expression",
+        "expression": "q.player.username"
+      }
+    }
+  },
+  "pages": [
+    {
+      "id": "intro",
+      "speaker": "npc",
+      "lines": [
+        "Bienvenue à l'entrée du Safari !",
+        "Pour entrer, il te faut un permis d'entrée obtenu auprès d'Écho,",
+        "ainsi que 500 points d'équipe.",
+        "Le permis est à usage unique et ne se cumule pas."
+      ],
+      "input": {
+        "type": "option",
+        "vertical": true,
+        "options": [
+          {
+            "text": "Entrer au Safari",
+            "value": "entrer",
+            "action": "q.player.has_tag('safari_permit') ? q.dialogue.set_page('entrer') : q.dialogue.set_page('pas_de_permis');"
+          },
+          {
+            "text": "Au revoir.",
+            "value": "fin",
+            "action": "q.dialogue.set_page('fin');"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entrer",
+      "speaker": "npc",
+      "lines": [
+        "Parfait, ton permis est en règle !",
+        "Bonne chasse, Dresseur. Et sois prudent là-dedans."
+      ],
+      "input": [
+        "q.run_command('columbina safari enter ' + q.player.username() + '');",
+        "q.dialogue.close();"
+      ]
+    },
+    {
+      "id": "pas_de_permis",
+      "speaker": "npc",
+      "lines": [
+        "Tu n'as pas de permis d'entrée !",
+        "Parle à Écho pour obtenir une quête quotidienne.",
+        "En la complétant, tu recevras un permis valable pour une entrée."
+      ],
+      "input": [
+        "q.dialogue.close();"
+        ]
+    },
+    {
+      "id": "fin",
+      "speaker": "npc",
+      "lines": [
+        "À bientôt, Dresseur !"
+      ],
+      "input": "q.dialogue.close();"
+    }
+  ]
+}
