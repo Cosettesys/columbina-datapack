@@ -1,0 +1,36 @@
+{
+  "parent": "cobbleverse:unys_bw1_root",
+  "display": {
+    "title": {
+      "translate": "advancements.cobbleverse.unys_bw1.defeat_noa"
+    },
+    "description": {
+      "translate": "advancements.cobbleverse.unys_bw1.defeat_noa.description"
+    },
+    "icon": {
+      "id": "cobblemon:mystic_water"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "hidden": false,
+    "frame": "task"
+  },
+  "criteria": {
+    "trainer_defeated": {
+      "conditions": {
+        "trainer_ids": [
+          "unys_bw1_noa"
+        ]
+      },
+      "trigger": "rctmod:defeat_count"
+    }
+  },
+  "requirements": [
+    [
+      "trainer_defeated"
+    ]
+  ],
+  "rewards": {
+    "function": "cobbleverse:noa_defeated"
+  }
+}

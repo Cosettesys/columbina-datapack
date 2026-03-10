@@ -1,0 +1,36 @@
+{
+  "parent": "cobbleverse:trainer/kanto/defeat_champion_blue",
+  "display": {
+    "title": {
+      "text": "Ligue Kanto complétée"
+    },
+    "description": {
+      "text": "Tu as vaincu le champion de la région Kanto."
+    },
+    "icon": {
+      "id": "cobblemon:poke_ball"
+    },
+    "announce_to_chat": false,
+    "show_toast": false,
+    "hidden": true,
+    "frame": "task"
+  },
+  "criteria": {
+    "champion_defeated": {
+      "conditions": {
+        "trainer_ids": [
+          "kanto_champion_blue"
+        ]
+      },
+      "trigger": "rctmod:defeat_count"
+    }
+  },
+  "requirements": [
+    [
+      "champion_defeated"
+    ]
+  ],
+  "rewards": {
+    "function": "cobbleverse_progression:cleared_kanto"
+  }
+}

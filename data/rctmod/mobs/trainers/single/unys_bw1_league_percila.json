@@ -1,0 +1,24 @@
+{
+  "requiredDefeats": [
+    [
+      "unys_bw1_league_kunz"
+    ]
+  ],
+  "series": [
+    "unys_bw1"
+  ],
+  "biomeTagBlacklist": [
+    "is_void",
+    "is_nether",
+    "is_overworld"
+  ],
+  "biomeTagWhitelist": [
+    "is_end"
+  ],
+  "type": "unys_bw1_league",
+  "signatureItem": "cobblemon:twisted_spoon",
+  "maxTrainerWins": -1,
+  "maxTrainerDefeats": 1,
+  "battleCooldownTicks": 240,
+  "spawnWeightFactor": 0
+}

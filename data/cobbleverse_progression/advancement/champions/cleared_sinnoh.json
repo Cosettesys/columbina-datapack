@@ -1,0 +1,36 @@
+{
+  "parent": "cobbleverse:trainer/sinnoh/defeat_champion_camilla",
+  "display": {
+    "title": {
+      "text": "Ligue Sinnoh complétée"
+    },
+    "description": {
+      "text": "Tu as vaincu le champion de la région Sinnoh."
+    },
+    "icon": {
+      "id": "cobblemon:poke_ball"
+    },
+    "announce_to_chat": false,
+    "show_toast": false,
+    "hidden": true,
+    "frame": "task"
+  },
+  "criteria": {
+    "champion_defeated": {
+      "conditions": {
+        "trainer_ids": [
+          "sinnoh_champion_camilla"
+        ]
+      },
+      "trigger": "rctmod:defeat_count"
+    }
+  },
+  "requirements": [
+    [
+      "champion_defeated"
+    ]
+  ],
+  "rewards": {
+    "function": "cobbleverse_progression:cleared_sinnoh"
+  }
+}

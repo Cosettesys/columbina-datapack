@@ -1,0 +1,36 @@
+{
+  "parent": "cobbleverse:trainer/johto/defeat_champion_lance",
+  "display": {
+    "title": {
+      "text": "Ligue Johto complétée"
+    },
+    "description": {
+      "text": "Tu as vaincu le champion de la région Johto."
+    },
+    "icon": {
+      "id": "cobblemon:poke_ball"
+    },
+    "announce_to_chat": false,
+    "show_toast": false,
+    "hidden": true,
+    "frame": "task"
+  },
+  "criteria": {
+    "champion_defeated": {
+      "conditions": {
+        "trainer_ids": [
+          "johto_champion_lance"
+        ]
+      },
+      "trigger": "rctmod:defeat_count"
+    }
+  },
+  "requirements": [
+    [
+      "champion_defeated"
+    ]
+  ],
+  "rewards": {
+    "function": "cobbleverse_progression:cleared_johto"
+  }
+}

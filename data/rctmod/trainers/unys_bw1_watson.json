@@ -1,0 +1,127 @@
+{
+  "name": {
+    "literal": "Watson"
+  },
+  "ai": {
+    "type": "rct",
+    "data": {
+      "moveBias": 1,
+      "switchBias": 0.5,
+      "statMoveBias": 1,
+      "itemBias": 0.8,
+      "maxSelectMargin": 0.15
+    }
+  },
+  "battleRules": {
+    "maxItemUses": 4
+  },
+  "bag": [
+    {
+      "item": "cobblemon:full_restore",
+      "quantity": 4
+    }
+  ],
+  "team": [
+    {
+      "moveset": [
+        "dragondance",
+        "dragonrage",
+        "crunch",
+        "aquatail"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "fraxure",
+      "gender": "MALE",
+      "level": 68,
+      "nature": "jolly",
+      "ability": "moldbreaker",
+      "heldItem": [
+        "dragonfang"
+      ]
+    },
+    {
+      "moveset": [
+        "dragondance",
+        "shadowclaw",
+        "rockslide",
+        "dragonrage"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "fraxure",
+      "gender": "MALE",
+      "level": 68,
+      "nature": "adamant",
+      "ability": "moldbreaker",
+      "heldItem": [
+        "lumberry"
+      ]
+    },
+    {
+      "moveset": [
+        "dragonpulse",
+        "moonblast",
+        "cottongguard",
+        "roost"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "altaria",
+      "gender": "MALE",
+      "level": 70,
+      "nature": "calm",
+      "ability": "cloudnine",
+      "heldItem": [
+        "leftovers"
+      ]
+    },
+    {
+      "moveset": [
+        "dragonclaw",
+        "crunch",
+        "dragondance",
+        "earthquake"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "haxorus",
+      "gender": "MALE",
+      "level": 72,
+      "nature": "jolly",
+      "ability": "moldbreaker",
+      "heldItem": [
+        "expertbelt"
+      ]
+    }
+  ],
+  "battleFormat": "GEN_9_SINGLES"
+}

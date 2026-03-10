@@ -1,0 +1,288 @@
+{
+  "initializationAction": [
+    "c.npc.set_chatting();",
+    "q.run_command('team add npc');",
+    "q.run_command('team modify npc collisionRule never');",
+    "q.player.username() == 'Novulyf' ? q.run_command('execute unless entity @e[type=cobblemon:npc,team=npc,distance=..3] at ' + q.player.username() + ' run team join npc @e[type=cobblemon:npc,limit=1,sort=nearest,distance=..3]') : '';"
+  ],
+  "speakers": {
+    "npc": {
+      "name": {
+        "type": "expression",
+        "expression": "q.npc.name"
+      },
+      "face": "q.npc.face();",
+      "gibber": {}
+    },
+    "player": {
+      "face": "q.player.face();",
+      "name": {
+        "type": "expression",
+        "expression": "q.player.username"
+      }
+    }
+  },
+  "pages": [
+    {
+      "id": "intro",
+      "speaker": "npc",
+      "lines": [
+        "Bonjour ! Je suis Chloé, Secrétaire de la Ligue.",
+        "Je peux t'inscrire à la ligue de ton choix parmi celles que tu as déjà débloquées."
+      ],
+      "input": "q.dialogue.set_page('menu');"
+    },
+    {
+      "id": "menu",
+      "speaker": "npc",
+      "lines": [
+        "Quelle ligue veux-tu rejoindre ?"
+      ],
+      "input": {
+        "type": "option",
+        "vertical": true,
+        "options": [
+          {
+            "text": "Kanto",
+            "value": "kanto",
+            "action": "q.dialogue.set_page('confirm_kanto');"
+          },
+          {
+            "text": "Johto",
+            "value": "johto",
+            "action": "q.player.has_tag('cleared_kanto') ? q.dialogue.set_page('confirm_johto') : q.dialogue.set_page('locked_johto');"
+          },
+          {
+            "text": "Hoenn",
+            "value": "hoenn",
+            "action": "q.player.has_tag('cleared_johto') ? q.dialogue.set_page('confirm_hoenn') : q.dialogue.set_page('locked_hoenn');"
+          },
+          {
+            "text": "Sinnoh",
+            "value": "sinnoh",
+            "action": "q.player.has_tag('cleared_hoenn') ? q.dialogue.set_page('confirm_sinnoh') : q.dialogue.set_page('locked_sinnoh');"
+          },
+          {
+            "text": "Unys BW1",
+            "value": "unys_bw1",
+            "action": "q.player.has_tag('cleared_sinnoh') ? q.dialogue.set_page('confirm_unys_bw1') : q.dialogue.set_page('locked_unys_bw1');"
+          },
+          {
+            "text": "Rien, au revoir.",
+            "value": "fin",
+            "action": "q.dialogue.set_page('fin');"
+          }
+        ]
+      }
+    },
+    {
+      "id": "confirm_kanto",
+      "speaker": "npc",
+      "lines": [
+        "Tu veux rejoindre la ligue Kanto ?",
+        "Ta progression dans cette ligue sera reprise là où tu t'es arrêté."
+      ],
+      "input": {
+        "type": "option",
+        "vertical": false,
+        "options": [
+          {
+            "text": "Oui, inscris-moi !",
+            "value": "oui",
+            "action": "q.run_command('rctmod player set series kanto ' + q.player.username()); q.dialogue.set_page('switch_kanto');"
+          },
+          {
+            "text": "Non, revenir.",
+            "value": "non",
+            "action": "q.dialogue.set_page('menu');"
+          }
+        ]
+      }
+    },
+    {
+      "id": "switch_kanto",
+      "speaker": "npc",
+      "lines": [
+        "C'est noté ! Tu es maintenant inscrit à la ligue Kanto.",
+        "Bonne chance, Dresseur !"
+      ],
+      "input": "q.dialogue.close();"
+    },
+    {
+      "id": "confirm_johto",
+      "speaker": "npc",
+      "lines": [
+        "Tu veux rejoindre la ligue Johto ?",
+        "Ta progression dans cette ligue sera reprise là où tu t'es arrêté."
+      ],
+      "input": {
+        "type": "option",
+        "vertical": false,
+        "options": [
+          {
+            "text": "Oui, inscris-moi !",
+            "value": "oui",
+            "action": "q.run_command('rctmod player set series johto ' + q.player.username()); q.dialogue.set_page('switch_johto');"
+          },
+          {
+            "text": "Non, revenir.",
+            "value": "non",
+            "action": "q.dialogue.set_page('menu');"
+          }
+        ]
+      }
+    },
+    {
+      "id": "switch_johto",
+      "speaker": "npc",
+      "lines": [
+        "C'est noté ! Tu es maintenant inscrit à la ligue Johto.",
+        "Bonne chance, Dresseur !"
+      ],
+      "input": "q.dialogue.close();"
+    },
+    {
+      "id": "locked_johto",
+      "speaker": "npc",
+      "lines": [
+        "Tu n'as pas encore accès à la ligue Johto.",
+        "Tu dois d'abord compléter la ligue Kanto pour pouvoir t'y inscrire."
+      ],
+      "input": "q.dialogue.set_page('menu');"
+    },
+    {
+      "id": "confirm_hoenn",
+      "speaker": "npc",
+      "lines": [
+        "Tu veux rejoindre la ligue Hoenn ?",
+        "Ta progression dans cette ligue sera reprise là où tu t'es arrêté."
+      ],
+      "input": {
+        "type": "option",
+        "vertical": false,
+        "options": [
+          {
+            "text": "Oui, inscris-moi !",
+            "value": "oui",
+            "action": "q.run_command('rctmod player set series hoenn ' + q.player.username()); q.dialogue.set_page('switch_hoenn');"
+          },
+          {
+            "text": "Non, revenir.",
+            "value": "non",
+            "action": "q.dialogue.set_page('menu');"
+          }
+        ]
+      }
+    },
+    {
+      "id": "switch_hoenn",
+      "speaker": "npc",
+      "lines": [
+        "C'est noté ! Tu es maintenant inscrit à la ligue Hoenn.",
+        "Bonne chance, Dresseur !"
+      ],
+      "input": "q.dialogue.close();"
+    },
+    {
+      "id": "locked_hoenn",
+      "speaker": "npc",
+      "lines": [
+        "Tu n'as pas encore accès à la ligue Hoenn.",
+        "Tu dois d'abord compléter la ligue Johto pour pouvoir t'y inscrire."
+      ],
+      "input": "q.dialogue.set_page('menu');"
+    },
+    {
+      "id": "confirm_sinnoh",
+      "speaker": "npc",
+      "lines": [
+        "Tu veux rejoindre la ligue Sinnoh ?",
+        "Ta progression dans cette ligue sera reprise là où tu t'es arrêté."
+      ],
+      "input": {
+        "type": "option",
+        "vertical": false,
+        "options": [
+          {
+            "text": "Oui, inscris-moi !",
+            "value": "oui",
+            "action": "q.run_command('rctmod player set series sinnoh ' + q.player.username()); q.dialogue.set_page('switch_sinnoh');"
+          },
+          {
+            "text": "Non, revenir.",
+            "value": "non",
+            "action": "q.dialogue.set_page('menu');"
+          }
+        ]
+      }
+    },
+    {
+      "id": "switch_sinnoh",
+      "speaker": "npc",
+      "lines": [
+        "C'est noté ! Tu es maintenant inscrit à la ligue Sinnoh.",
+        "Bonne chance, Dresseur !"
+      ],
+      "input": "q.dialogue.close();"
+    },
+    {
+      "id": "locked_sinnoh",
+      "speaker": "npc",
+      "lines": [
+        "Tu n'as pas encore accès à la ligue Sinnoh.",
+        "Tu dois d'abord compléter la ligue Hoenn pour pouvoir t'y inscrire."
+      ],
+      "input": "q.dialogue.set_page('menu');"
+    },
+    {
+      "id": "confirm_unys_bw1",
+      "speaker": "npc",
+      "lines": [
+        "Tu veux rejoindre la ligue Unys BW1 ?",
+        "Ta progression dans cette ligue sera reprise là où tu t'es arrêté."
+      ],
+      "input": {
+        "type": "option",
+        "vertical": false,
+        "options": [
+          {
+            "text": "Oui, inscris-moi !",
+            "value": "oui",
+            "action": "q.run_command('rctmod player set series unys_bw1 ' + q.player.username()); q.dialogue.set_page('switch_unys_bw1');"
+          },
+          {
+            "text": "Non, revenir.",
+            "value": "non",
+            "action": "q.dialogue.set_page('menu');"
+          }
+        ]
+      }
+    },
+    {
+      "id": "switch_unys_bw1",
+      "speaker": "npc",
+      "lines": [
+        "C'est noté ! Tu es maintenant inscrit à la ligue Unys BW1.",
+        "Bonne chance, Dresseur !"
+      ],
+      "input": "q.dialogue.close();"
+    },
+    {
+      "id": "locked_unys_bw1",
+      "speaker": "npc",
+      "lines": [
+        "Tu n'as pas encore accès à la ligue Unys BW1.",
+        "Tu dois d'abord compléter la ligue Sinnoh pour pouvoir t'y inscrire."
+      ],
+      "input": "q.dialogue.set_page('menu');"
+    },
+    {
+      "id": "fin",
+      "speaker": "npc",
+      "lines": [
+        "À bientôt, Dresseur !"
+      ],
+      "input": "q.dialogue.close();"
+    }
+  ]
+}

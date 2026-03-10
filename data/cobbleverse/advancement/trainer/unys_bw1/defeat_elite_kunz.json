@@ -1,0 +1,36 @@
+{
+  "parent": "cobbleverse:advancement/trainer/unys_bw1/defeat_elite_pieris",
+  "display": {
+    "title": {
+      "translate": "advancements.cobbleverse.unys_bw1.defeat_elite_kunz"
+    },
+    "description": {
+      "translate": "advancements.cobbleverse.unys_bw1.defeat_elite_kunz.description"
+    },
+    "icon": {
+      "id": "cobblemon:black_belt"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "hidden": false,
+    "frame": "goal"
+  },
+  "criteria": {
+    "trainer_defeated": {
+      "conditions": {
+        "trainer_ids": [
+          "unys_bw1_league_kunz"
+        ]
+      },
+      "trigger": "rctmod:defeat_count"
+    }
+  },
+  "requirements": [
+    [
+      "trainer_defeated"
+    ]
+  ],
+  "rewards": {
+    "function": "cobbleverse:kunz_defeated"
+  }
+}

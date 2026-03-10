@@ -1,0 +1,36 @@
+{
+  "parent": "cobbleverse:unys_bw1_root",
+  "display": {
+    "title": {
+      "translate": "advancements.cobbleverse.unys_bw1.defeat_rachid"
+    },
+    "description": {
+      "translate": "advancements.cobbleverse.unys_bw1.defeat_rachid.description"
+    },
+    "icon": {
+      "id": "cobblemon:miracle_seed"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "hidden": false,
+    "frame": "task"
+  },
+  "criteria": {
+    "trainer_defeated": {
+      "conditions": {
+        "trainer_ids": [
+          "unys_bw1_rachid"
+        ]
+      },
+      "trigger": "rctmod:defeat_count"
+    }
+  },
+  "requirements": [
+    [
+      "trainer_defeated"
+    ]
+  ],
+  "rewards": {
+    "function": "cobbleverse:rachid_defeated"
+  }
+}

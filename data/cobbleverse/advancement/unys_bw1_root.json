@@ -1,0 +1,28 @@
+{
+  "parent": "cobbleverse:trainer/sinnoh/defeat_champion_camilla",
+  "display": {
+    "title": {
+      "translate": "advancements.cobbleverse.unys_bw1"
+    },
+    "description": {
+      "translate": "advancements.cobbleverse.unys_bw1.description"
+    },
+    "icon": {
+      "id": "cobblemon:poke_ball"
+    },
+    "announce_to_chat": false,
+    "show_toast": false,
+    "hidden": false,
+    "frame": "task"
+  },
+  "criteria": {
+    "started_unys": {
+      "trigger": "cobblemon:pick_starter"
+    }
+  },
+  "requirements": [
+    [
+      "started_unys"
+    ]
+  ]
+}

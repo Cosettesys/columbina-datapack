@@ -1,0 +1,36 @@
+{
+  "parent": "cobbleverse:trainer/hoenn/defeat_champion_rocco",
+  "display": {
+    "title": {
+      "text": "Ligue Hoenn complétée"
+    },
+    "description": {
+      "text": "Tu as vaincu le champion de la région Hoenn."
+    },
+    "icon": {
+      "id": "cobblemon:poke_ball"
+    },
+    "announce_to_chat": false,
+    "show_toast": false,
+    "hidden": true,
+    "frame": "task"
+  },
+  "criteria": {
+    "champion_defeated": {
+      "conditions": {
+        "trainer_ids": [
+          "hoenn_champion_rocco"
+        ]
+      },
+      "trigger": "rctmod:defeat_count"
+    }
+  },
+  "requirements": [
+    [
+      "champion_defeated"
+    ]
+  ],
+  "rewards": {
+    "function": "cobbleverse_progression:cleared_hoenn"
+  }
+}

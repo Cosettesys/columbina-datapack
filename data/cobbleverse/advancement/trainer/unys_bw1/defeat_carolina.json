@@ -1,0 +1,36 @@
+{
+  "parent": "cobbleverse:advancement/trainer/unys_bw1/defeat_bardane",
+  "display": {
+    "title": {
+      "translate": "advancements.cobbleverse.unys_bw1.defeat_carolina"
+    },
+    "description": {
+      "translate": "advancements.cobbleverse.unys_bw1.defeat_carolina.description"
+    },
+    "icon": {
+      "id": "cobblemon:sharp_beak"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "hidden": false,
+    "frame": "task"
+  },
+  "criteria": {
+    "trainer_defeated": {
+      "conditions": {
+        "trainer_ids": [
+          "unys_bw1_carolina"
+        ]
+      },
+      "trigger": "rctmod:defeat_count"
+    }
+  },
+  "requirements": [
+    [
+      "trainer_defeated"
+    ]
+  ],
+  "rewards": {
+    "function": "cobbleverse:carolina_defeated"
+  }
+}

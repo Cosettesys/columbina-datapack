@@ -1,0 +1,36 @@
+{
+  "parent": "cobbleverse:advancement/trainer/unys_bw1/defeat_brycen",
+  "display": {
+    "title": {
+      "translate": "advancements.cobbleverse.unys_bw1.defeat_watson"
+    },
+    "description": {
+      "translate": "advancements.cobbleverse.unys_bw1.defeat_watson.description"
+    },
+    "icon": {
+      "id": "cobblemon:dragon_fang"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "hidden": false,
+    "frame": "goal"
+  },
+  "criteria": {
+    "trainer_defeated": {
+      "conditions": {
+        "trainer_ids": [
+          "unys_bw1_watson"
+        ]
+      },
+      "trigger": "rctmod:defeat_count"
+    }
+  },
+  "requirements": [
+    [
+      "trainer_defeated"
+    ]
+  ],
+  "rewards": {
+    "function": "cobbleverse:watson_defeated"
+  }
+}

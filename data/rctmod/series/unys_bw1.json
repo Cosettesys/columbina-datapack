@@ -1,0 +1,14 @@
+{
+  "title": {
+    "literal": "Unys - BW1"
+  },
+  "description": {
+    "literal": "The Unys region awaits. Face the gym leaders of Black & White and prove your worth!"
+  },
+  "requiredSeries": [
+    [
+      "sinnoh"
+    ]
+  ],
+  "difficulty": 9
+}
