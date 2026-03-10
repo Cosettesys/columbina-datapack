@@ -24,10 +24,10 @@
   "team": [
     {
       "moveset": [
+        "psychic",
         "airslash",
-        "psybeam",
-        "attract",
-        "simplelbeam"
+        "calmmind",
+        "roost"
       ],
       "ivs": {
         "spe": 31,
@@ -39,20 +39,45 @@
       },
       "evs": {},
       "species": "swoobat",
-      "gender": "FEMALE",
-      "level": 55,
-      "nature": "modest",
+      "level": 52,
+      "nature": "timid",
       "ability": "unaware",
       "heldItem": [
-        "wisegglasses"
-      ]
+        "twistedspoon"
+      ],
+      "gender": "FEMALE"
     },
     {
       "moveset": [
-        "airslash",
+        "aerialpillar",
         "quickattack",
         "detect",
-        "taunt"
+        "workup"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "tranquill",
+      "level": 53,
+      "nature": "jolly",
+      "ability": "rivalry",
+      "heldItem": [
+        "sharpbeak"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "bravebird",
+        "hypnosis",
+        "tailwind",
+        "quickattack"
       ],
       "ivs": {
         "spe": 31,
@@ -64,19 +89,44 @@
       },
       "evs": {},
       "species": "unfezant",
-      "gender": "FEMALE",
-      "level": 57,
+      "level": 54,
       "nature": "jolly",
-      "ability": "superluck",
+      "ability": "bigpecks",
       "heldItem": [
         "sharpbeak"
-      ]
+      ],
+      "gender": "MALE"
     },
     {
       "moveset": [
-        "surf",
         "airslash",
-        "featherdance",
+        "psybeam",
+        "cosmicpower",
+        "storedpower"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "sigilyph",
+      "level": 54,
+      "nature": "timid",
+      "ability": "wonderskin",
+      "heldItem": [
+        "twistspoon"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "hurricane",
+        "scald",
+        "tailwind",
         "roost"
       ],
       "ivs": {
@@ -89,13 +139,13 @@
       },
       "evs": {},
       "species": "swanna",
-      "gender": "FEMALE",
-      "level": 58,
+      "level": 55,
       "nature": "modest",
       "ability": "hydration",
       "heldItem": [
-        "leftovers"
-      ]
+        "mysticwater"
+      ],
+      "gender": "FEMALE"
     }
   ],
   "battleFormat": "GEN_9_SINGLES"

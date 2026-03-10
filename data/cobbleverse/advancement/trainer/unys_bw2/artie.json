@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "id": "cobblemon:silver_powder"
+    },
+    "title": {
+      "text": "Arène 3 — Artie"
+    },
+    "description": {
+      "text": "Défais Artie (Insecte)"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "cobbleverse:trainer/unys_bw2/strykna",
+  "criteria": {
+    "requirement": {
+      "trigger": "rctmod:trainer_defeated",
+      "conditions": {
+        "trainer": "unys_bw2_artie"
+      }
+    }
+  },
+  "rewards": {
+    "function": "cobbleverse:unys_bw2_artie_defeated"
+  }
+}

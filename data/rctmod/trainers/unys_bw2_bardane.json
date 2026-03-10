@@ -1,0 +1,127 @@
+{
+  "name": {
+    "literal": "Bardane"
+  },
+  "ai": {
+    "type": "rct",
+    "data": {
+      "moveBias": 1,
+      "switchBias": 0.5,
+      "statMoveBias": 1,
+      "itemBias": 0.8,
+      "maxSelectMargin": 0.15
+    }
+  },
+  "battleRules": {
+    "maxItemUses": 3
+  },
+  "bag": [
+    {
+      "item": "cobblemon:hyper_potion",
+      "quantity": 3
+    }
+  ],
+  "team": [
+    {
+      "moveset": [
+        "crunch",
+        "earthquake",
+        "stoneedge",
+        "dragonclaw"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "krokorok",
+      "level": 49,
+      "nature": "jolly",
+      "ability": "moxie",
+      "heldItem": [
+        "blackglasses"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "earthquake",
+        "nightslash",
+        "swordsdance",
+        "xscissor"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "sandslash",
+      "level": 49,
+      "nature": "adamant",
+      "ability": "sandrush",
+      "heldItem": [
+        "softsand"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "bonemerang",
+        "rockslide",
+        "firepunch",
+        "swordsdance"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "marowak",
+      "level": 50,
+      "nature": "adamant",
+      "ability": "rockhead",
+      "heldItem": [
+        "thickclub"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "earthquake",
+        "ironhead",
+        "swordsdance",
+        "xscissor"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "excadrill",
+      "level": 50,
+      "nature": "adamant",
+      "ability": "sandrush",
+      "heldItem": [
+        "softsand"
+      ],
+      "gender": "MALE"
+    }
+  ],
+  "battleFormat": "GEN_9_SINGLES"
+}

@@ -1,0 +1,177 @@
+{
+  "name": {
+    "literal": "Iris"
+  },
+  "ai": {
+    "type": "rct",
+    "data": {
+      "moveBias": 1,
+      "switchBias": 0.7,
+      "statMoveBias": 1,
+      "itemBias": 1,
+      "maxSelectMargin": 0.05
+    }
+  },
+  "battleRules": {
+    "maxItemUses": 3
+  },
+  "bag": [
+    {
+      "item": "cobblemon:full_restore",
+      "quantity": 3
+    }
+  ],
+  "team": [
+    {
+      "moveset": [
+        "dragonpulse",
+        "darkpulse",
+        "flamethrower",
+        "focusblast"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "hydreigon",
+      "level": 100,
+      "nature": "modest",
+      "ability": "levitate",
+      "heldItem": [
+        "choicescarf"
+      ],
+      "gender": "FEMALE"
+    },
+    {
+      "moveset": [
+        "outrage",
+        "glare",
+        "firepunch",
+        "suckerpunch"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "druddigon",
+      "level": 100,
+      "nature": "adamant",
+      "ability": "roughskin",
+      "heldItem": [
+        "rockyhelmet"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "headsmash",
+        "ironhead",
+        "earthquake",
+        "heavyslam"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "aggron",
+      "level": 100,
+      "nature": "brave",
+      "ability": "rockhead",
+      "heldItem": [
+        "assaultvest"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "stoneedge",
+        "acrobatics",
+        "dragonpulse",
+        "earthquake"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "archeops",
+      "level": 100,
+      "nature": "jolly",
+      "ability": "defeatist",
+      "heldItem": [
+        "flyingjem"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "blizzard",
+        "surf",
+        "thunderbolt",
+        "dragonpulse"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "lapras",
+      "level": 100,
+      "nature": "modest",
+      "ability": "hydration",
+      "heldItem": [
+        "choicescarf"
+      ],
+      "gender": "FEMALE"
+    },
+    {
+      "moveset": [
+        "outrage",
+        "earthquake",
+        "swordsdance",
+        "poisonjab"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "haxorus",
+      "level": 100,
+      "nature": "adamant",
+      "ability": "moldbreaker",
+      "heldItem": [
+        "lifeorb"
+      ],
+      "gender": "FEMALE"
+    }
+  ],
+  "battleFormat": "GEN_9_SINGLES"
+}

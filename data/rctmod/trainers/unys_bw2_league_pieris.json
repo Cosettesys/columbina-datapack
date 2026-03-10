@@ -1,0 +1,177 @@
+{
+  "name": {
+    "literal": "Pieris"
+  },
+  "ai": {
+    "type": "rct",
+    "data": {
+      "moveBias": 1,
+      "switchBias": 0.6,
+      "statMoveBias": 1,
+      "itemBias": 1,
+      "maxSelectMargin": 0.1
+    }
+  },
+  "battleRules": {
+    "maxItemUses": 3
+  },
+  "bag": [
+    {
+      "item": "cobblemon:full_restore",
+      "quantity": 3
+    }
+  ],
+  "team": [
+    {
+      "moveset": [
+        "nightslash",
+        "playrough",
+        "suckerpunch",
+        "uturn"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "liepard",
+      "level": 80,
+      "nature": "jolly",
+      "ability": "limber",
+      "heldItem": [
+        "blackglasses"
+      ],
+      "gender": "FEMALE"
+    },
+    {
+      "moveset": [
+        "darkpulse",
+        "flamethrower",
+        "nastyplot",
+        "willowisp"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "houndoom",
+      "level": 81,
+      "nature": "timid",
+      "ability": "flashfire",
+      "heldItem": [
+        "lifeorb"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "crunch",
+        "highjumpkick",
+        "icepunch",
+        "dragondance"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "scrafty",
+      "level": 82,
+      "nature": "adamant",
+      "ability": "moxie",
+      "heldItem": [
+        "lumberry"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "nightslash",
+        "bravebird",
+        "superpower",
+        "roost"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "honchkrow",
+      "level": 83,
+      "nature": "adamant",
+      "ability": "moxie",
+      "heldItem": [
+        "lifeorb"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "crunch",
+        "earthquake",
+        "stoneedge",
+        "dragonclaw"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "krookodile",
+      "level": 84,
+      "nature": "jolly",
+      "ability": "moxie",
+      "heldItem": [
+        "choiceband"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "ironhead",
+        "nightslash",
+        "suckerpunch",
+        "swordsdance"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "bisharp",
+      "level": 85,
+      "nature": "adamant",
+      "ability": "defiant",
+      "heldItem": [
+        "lifeorb"
+      ],
+      "gender": "MALE"
+    }
+  ],
+  "battleFormat": "GEN_9_SINGLES"
+}

@@ -1,0 +1,1 @@
+tellraw @s ["",{"text":"  Félicitations !","bold":true,"color":"gold"},"\n","Tu as vaincu ",{"text":"Tcheren","bold":true,"color":"#a8a878"},{"text":" et obtenu le "},{"text":"Badge Normal","bold":true,"color":"yellow"},{"text":"!"}]

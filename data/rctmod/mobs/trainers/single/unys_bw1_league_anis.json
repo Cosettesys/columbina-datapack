@@ -1,7 +1,8 @@
 {
   "requiredDefeats": [
     [
-      "unys_bw1_watson"
+      "unys_bw1_watson",
+      "unys_bw1_iris"
     ]
   ],
   "series": [

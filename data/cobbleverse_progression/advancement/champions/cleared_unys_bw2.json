@@ -1,0 +1,36 @@
+{
+  "parent": "cobbleverse:trainer/unys_bw2/champion_iris",
+  "display": {
+    "title": {
+      "text": "Ligue Unys BW2 complétée"
+    },
+    "description": {
+      "text": "Tu as vaincu la championne de la région Unys BW2."
+    },
+    "icon": {
+      "id": "cobblemon:poke_ball"
+    },
+    "announce_to_chat": false,
+    "show_toast": false,
+    "hidden": true,
+    "frame": "task"
+  },
+  "criteria": {
+    "champion_defeated": {
+      "conditions": {
+        "trainer_ids": [
+          "unys_bw2_champion_iris"
+        ]
+      },
+      "trigger": "rctmod:defeat_count"
+    }
+  },
+  "requirements": [
+    [
+      "champion_defeated"
+    ]
+  ],
+  "rewards": {
+    "function": "cobbleverse_progression:cleared_unys_bw2"
+  }
+}

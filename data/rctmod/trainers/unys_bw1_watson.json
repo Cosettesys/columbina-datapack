@@ -13,70 +13,20 @@
     }
   },
   "battleRules": {
-    "maxItemUses": 4
+    "maxItemUses": 3
   },
   "bag": [
     {
-      "item": "cobblemon:full_restore",
-      "quantity": 4
+      "item": "cobblemon:max_potion",
+      "quantity": 3
     }
   ],
   "team": [
     {
       "moveset": [
-        "dragondance",
-        "dragonrage",
-        "crunch",
-        "aquatail"
-      ],
-      "ivs": {
-        "spe": 31,
-        "spd": 31,
-        "spa": 31,
-        "def": 31,
-        "atk": 31,
-        "hp": 31
-      },
-      "evs": {},
-      "species": "fraxure",
-      "gender": "MALE",
-      "level": 68,
-      "nature": "jolly",
-      "ability": "moldbreaker",
-      "heldItem": [
-        "dragonfang"
-      ]
-    },
-    {
-      "moveset": [
-        "dragondance",
-        "shadowclaw",
-        "rockslide",
-        "dragonrage"
-      ],
-      "ivs": {
-        "spe": 31,
-        "spd": 31,
-        "spa": 31,
-        "def": 31,
-        "atk": 31,
-        "hp": 31
-      },
-      "evs": {},
-      "species": "fraxure",
-      "gender": "MALE",
-      "level": 68,
-      "nature": "adamant",
-      "ability": "moldbreaker",
-      "heldItem": [
-        "lumberry"
-      ]
-    },
-    {
-      "moveset": [
-        "dragonpulse",
+        "dracometeor",
         "moonblast",
-        "cottongguard",
+        "hypervoice",
         "roost"
       ],
       "ivs": {
@@ -89,19 +39,94 @@
       },
       "evs": {},
       "species": "altaria",
-      "gender": "MALE",
-      "level": 70,
+      "level": 68,
       "nature": "calm",
       "ability": "cloudnine",
       "heldItem": [
         "leftovers"
-      ]
+      ],
+      "gender": "FEMALE"
+    },
+    {
+      "moveset": [
+        "outrage",
+        "earthquake",
+        "uturn",
+        "fireblast"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "flygon",
+      "level": 68,
+      "nature": "jolly",
+      "ability": "levitate",
+      "heldItem": [
+        "dragonscale"
+      ],
+      "gender": "MALE"
     },
     {
       "moveset": [
         "dragonclaw",
-        "crunch",
-        "dragondance",
+        "xscissor",
+        "nightslash",
+        "swordsdance"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "fraxure",
+      "level": 69,
+      "nature": "jolly",
+      "ability": "moldbreaker",
+      "heldItem": [
+        "dragonscale"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "dracometeor",
+        "surf",
+        "icebeam",
+        "focusenergy"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "kingdra",
+      "level": 69,
+      "nature": "modest",
+      "ability": "sniper",
+      "heldItem": [
+        "deepseascale"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "outrage",
+        "extremespeed",
+        "firepunch",
         "earthquake"
       ],
       "ivs": {
@@ -113,14 +138,39 @@
         "hp": 31
       },
       "evs": {},
-      "species": "haxorus",
-      "gender": "MALE",
-      "level": 72,
+      "species": "dragonite",
+      "level": 70,
       "nature": "jolly",
+      "ability": "innerfocus",
+      "heldItem": [
+        "lumberry"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "outrage",
+        "earthquake",
+        "poisonjab",
+        "swordsdance"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "haxorus",
+      "level": 70,
+      "nature": "adamant",
       "ability": "moldbreaker",
       "heldItem": [
-        "expertbelt"
-      ]
+        "choiceband"
+      ],
+      "gender": "MALE"
     }
   ],
   "battleFormat": "GEN_9_SINGLES"

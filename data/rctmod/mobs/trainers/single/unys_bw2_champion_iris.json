@@ -1,0 +1,34 @@
+{
+  "series": [
+    "unys_bw2"
+  ],
+  "biomeTagBlacklist": [
+    "is_void",
+    "is_nether",
+    "is_end",
+    "is_underground"
+  ],
+  "biomeTagWhitelist": [
+    "cobblemon:is_peak"
+  ],
+  "type": "unys_bw2_champion",
+  "signatureItem": "cobblemon:dragon_scale",
+  "maxTrainerWins": -1,
+  "maxTrainerDefeats": 1,
+  "battleCooldownTicks": 240,
+  "spawnWeightFactor": 0,
+  "requiredDefeats": [
+    [
+      "unys_bw2_league_anis"
+    ],
+    [
+      "unys_bw2_league_pieris"
+    ],
+    [
+      "unys_bw2_league_percila"
+    ],
+    [
+      "unys_bw2_league_kunz"
+    ]
+  ]
+}

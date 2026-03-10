@@ -1,0 +1,176 @@
+{
+  "name": {
+    "literal": "Kunz"
+  },
+  "ai": {
+    "type": "rct",
+    "data": {
+      "moveBias": 1,
+      "switchBias": 0.6,
+      "statMoveBias": 1,
+      "itemBias": 1,
+      "maxSelectMargin": 0.1
+    }
+  },
+  "battleRules": {
+    "maxItemUses": 3
+  },
+  "bag": [
+    {
+      "item": "cobblemon:full_restore",
+      "quantity": 3
+    }
+  ],
+  "team": [
+    {
+      "moveset": [
+        "seismictoss",
+        "stormthrow",
+        "bulkup",
+        "payback"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "throh",
+      "level": 90,
+      "nature": "adamant",
+      "ability": "guts",
+      "heldItem": [
+        "flameorb"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "closecombat",
+        "stoneedge",
+        "icepunch",
+        "earthquake"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "sawk",
+      "level": 91,
+      "nature": "jolly",
+      "ability": "sturdy",
+      "heldItem": [
+        "choiceband"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "drainpunch",
+        "icepunch",
+        "machpunch",
+        "stoneedge"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "conkeldurr",
+      "level": 92,
+      "nature": "adamant",
+      "ability": "guts",
+      "heldItem": [
+        "flameorb"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "highjumpkick",
+        "uturn",
+        "stoneedge",
+        "swordsdance"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "mienshao",
+      "level": 93,
+      "nature": "jolly",
+      "ability": "regenerator",
+      "heldItem": [
+        "lifeorb"
+      ],
+      "gender": "FEMALE"
+    },
+    {
+      "moveset": [
+        "aurasphere",
+        "flashcannon",
+        "nastyplot",
+        "vacuumwave"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "lucario",
+      "level": 94,
+      "nature": "timid",
+      "ability": "justified",
+      "heldItem": [
+        "lifeorb"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "closecombat",
+        "stoneedge",
+        "swordsdance",
+        "xscissor"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "terrakion",
+      "level": 95,
+      "nature": "jolly",
+      "ability": "justified",
+      "heldItem": [
+        "choicescarf"
+      ]
+    }
+  ],
+  "battleFormat": "GEN_9_SINGLES"
+}

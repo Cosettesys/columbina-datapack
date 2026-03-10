@@ -13,21 +13,21 @@
     }
   },
   "battleRules": {
-    "maxItemUses": 1
+    "maxItemUses": 3
   },
   "bag": [
     {
       "item": "cobblemon:potion",
-      "quantity": 1
+      "quantity": 3
     }
   ],
   "team": [
     {
       "moveset": [
-        "cottonspore",
-        "tackle",
         "leechseed",
-        "growl"
+        "megadrain",
+        "poisonpowder",
+        "tailwind"
       ],
       "ivs": {
         "spe": 31,
@@ -39,17 +39,20 @@
       },
       "evs": {},
       "species": "cottonee",
-      "gender": "MALE",
-      "level": 14,
+      "level": 16,
       "nature": "timid",
-      "ability": "prankster"
+      "ability": "prankster",
+      "heldItem": [
+        "miracleseed"
+      ],
+      "gender": "FEMALE"
     },
     {
       "moveset": [
-        "vinwhip",
-        "leechseed",
-        "growth",
-        "wrap"
+        "vinewhip",
+        "lowkick",
+        "taunt",
+        "scratch"
       ],
       "ivs": {
         "spe": 31,
@@ -61,20 +64,20 @@
       },
       "evs": {},
       "species": "pansage",
-      "gender": "MALE",
-      "level": 15,
-      "nature": "modest",
+      "level": 17,
+      "nature": "jolly",
       "ability": "gluttony",
       "heldItem": [
-        "oranberry"
-      ]
+        "sitrusberry"
+      ],
+      "gender": "MALE"
     },
     {
       "moveset": [
         "razorleaf",
-        "leechseed",
-        "megadrain",
-        "sweetscent"
+        "stringshot",
+        "tackle",
+        "bugbite"
       ],
       "ivs": {
         "spe": 31,
@@ -86,13 +89,13 @@
       },
       "evs": {},
       "species": "sewaddle",
-      "gender": "MALE",
-      "level": 17,
-      "nature": "hasty",
-      "ability": "chlorophyll",
+      "level": 18,
+      "nature": "adamant",
+      "ability": "swarm",
       "heldItem": [
-        "focussash"
-      ]
+        "oranberry"
+      ],
+      "gender": "MALE"
     }
   ],
   "battleFormat": "GEN_9_SINGLES"

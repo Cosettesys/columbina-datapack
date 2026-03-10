@@ -1,0 +1,55 @@
+{
+  "on_battle_start": [
+    {
+      "translatable": "dialogs.columbina.unys_bw2_tcheren.on_battle_start.0"
+    },
+    {
+      "translatable": "dialogs.columbina.unys_bw2_tcheren.on_battle_start.1"
+    }
+  ],
+  "on_battle_won": [
+    {
+      "translatable": "dialogs.columbina.unys_bw2_tcheren.on_battle_won.0"
+    }
+  ],
+  "trainer_lost": [
+    {
+      "translatable": "dialogs.columbina.unys_bw2_tcheren.trainer_lost.0"
+    }
+  ],
+  "missing_required_trainer": [
+    {
+      "translatable": "dialogs.columbina.unys_bw2_tcheren.missing_required_trainer.0"
+    }
+  ],
+  "low_level_cap": [
+    {
+      "translatable": "dialogs.columbina.unys_bw2_tcheren.low_level_cap.0"
+    }
+  ],
+  "over_level_cap": [
+    {
+      "translatable": "dialogs.columbina.unys_bw2_tcheren.over_level_cap.0"
+    }
+  ],
+  "on_cooldown": [
+    {
+      "translatable": "dialogs.columbina.unys_bw2_tcheren.on_cooldown.0"
+    }
+  ],
+  "trainer_won": [
+    {
+      "translatable": "dialogs.columbina.unys_bw2_tcheren.trainer_won.0"
+    }
+  ],
+  "missing_pokemon": [
+    {
+      "translatable": "dialogs.columbina.unys_bw2_tcheren.missing_pokemon.0"
+    }
+  ],
+  "wrong_series": [
+    {
+      "translatable": "dialogs.columbina.unys_bw2_tcheren.wrong_series.0"
+    }
+  ]
+}

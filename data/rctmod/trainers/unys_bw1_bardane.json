@@ -26,8 +26,8 @@
       "moveset": [
         "crunch",
         "earthquake",
-        "sandtomb",
-        "swagger"
+        "stoneedge",
+        "dragonclaw"
       ],
       "ivs": {
         "spe": 31,
@@ -39,20 +39,45 @@
       },
       "evs": {},
       "species": "krokorok",
-      "gender": "MALE",
-      "level": 48,
+      "level": 49,
       "nature": "jolly",
-      "ability": "intimidate",
+      "ability": "moxie",
       "heldItem": [
-        "softsand"
-      ]
+        "blackglasses"
+      ],
+      "gender": "MALE"
     },
     {
       "moveset": [
+        "bite",
+        "dig",
+        "sandstorm",
+        "swagger"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "sandile",
+      "level": 49,
+      "nature": "jolly",
+      "ability": "intimidate",
+      "heldItem": [
+        "softSand"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "scald",
+        "earthpower",
         "muddywater",
-        "mudshot",
-        "supersonic",
-        "bubblebeam"
+        "stealthrock"
       ],
       "ivs": {
         "spe": 31,
@@ -64,20 +89,20 @@
       },
       "evs": {},
       "species": "palpitoad",
-      "gender": "MALE",
-      "level": 49,
+      "level": 50,
       "nature": "modest",
       "ability": "waterabsorb",
       "heldItem": [
-        "rindoberry"
-      ]
+        "softsand"
+      ],
+      "gender": "MALE"
     },
     {
       "moveset": [
         "earthquake",
-        "rockslide",
+        "ironhead",
         "swordsdance",
-        "drillrun"
+        "xscissor"
       ],
       "ivs": {
         "spe": 31,
@@ -89,13 +114,13 @@
       },
       "evs": {},
       "species": "excadrill",
-      "gender": "MALE",
-      "level": 52,
+      "level": 50,
       "nature": "adamant",
-      "ability": "sandforce",
+      "ability": "sandrush",
       "heldItem": [
-        "rockyhelmet"
-      ]
+        "softsand"
+      ],
+      "gender": "MALE"
     }
   ],
   "battleFormat": "GEN_9_SINGLES"

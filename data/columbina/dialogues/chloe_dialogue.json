@@ -68,6 +68,11 @@
             "action": "q.player.has_tag('cleared_sinnoh') ? q.dialogue.set_page('confirm_unys_bw1') : q.dialogue.set_page('locked_unys_bw1');"
           },
           {
+            "text": "Unys BW2",
+            "value": "unys_bw2",
+            "action": "q.player.has_tag('cleared_unys_bw1') ? q.dialogue.set_page('confirm_unys_bw2') : q.dialogue.set_page('locked_unys_bw2');"
+          },
+          {
             "text": "Rien, au revoir.",
             "value": "fin",
             "action": "q.dialogue.set_page('fin');"
@@ -273,6 +278,48 @@
       "lines": [
         "Tu n'as pas encore accès à la ligue Unys BW1.",
         "Tu dois d'abord compléter la ligue Sinnoh pour pouvoir t'y inscrire."
+      ],
+      "input": "q.dialogue.set_page('menu');"
+    },
+    {
+      "id": "confirm_unys_bw2",
+      "speaker": "npc",
+      "lines": [
+        "Tu veux rejoindre la ligue Unys BW2 ?",
+        "Ta progression dans cette ligue sera reprise là où tu t'es arrêté."
+      ],
+      "input": {
+        "type": "option",
+        "vertical": false,
+        "options": [
+          {
+            "text": "Oui, inscris-moi !",
+            "value": "oui",
+            "action": "q.run_command('rctmod player set series unys_bw2 ' + q.player.username()); q.dialogue.set_page('switch_unys_bw2');"
+          },
+          {
+            "text": "Non, revenir.",
+            "value": "non",
+            "action": "q.dialogue.set_page('menu');"
+          }
+        ]
+      }
+    },
+    {
+      "id": "switch_unys_bw2",
+      "speaker": "npc",
+      "lines": [
+        "C'est noté ! Tu es maintenant inscrit à la ligue Unys BW2.",
+        "Bonne chance, Dresseur !"
+      ],
+      "input": "q.dialogue.close();"
+    },
+    {
+      "id": "locked_unys_bw2",
+      "speaker": "npc",
+      "lines": [
+        "Tu n'as pas encore accès à la ligue Unys BW2.",
+        "Tu dois d'abord compléter la ligue Unys BW1 pour pouvoir t'y inscrire."
       ],
       "input": "q.dialogue.set_page('menu');"
     },

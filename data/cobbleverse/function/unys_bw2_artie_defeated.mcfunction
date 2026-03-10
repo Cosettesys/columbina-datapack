@@ -1,0 +1,1 @@
+tellraw @s ["",{"text":"  Félicitations !","bold":true,"color":"gold"},"\n","Tu as vaincu ",{"text":"Artie","bold":true,"color":"#1a6b9a"},{"text":" et obtenu le "},{"text":"Badge Insecte","bold":true,"color":"yellow"},{"text":"!"}]

@@ -13,12 +13,12 @@
     }
   },
   "battleRules": {
-    "maxItemUses": 6
+    "maxItemUses": 3
   },
   "bag": [
     {
       "item": "cobblemon:full_restore",
-      "quantity": 6
+      "quantity": 3
     }
   ],
   "team": [
@@ -26,8 +26,8 @@
       "moveset": [
         "shadowball",
         "willowisp",
-        "hex",
-        "recover"
+        "nastyplot",
+        "painsplit"
       ],
       "ivs": {
         "spe": 31,
@@ -37,55 +37,22 @@
         "atk": 31,
         "hp": 31
       },
-      "evs": {
-        "spa": 252,
-        "hp": 252,
-        "spe": 6
-      },
-      "species": "jellicent",
-      "gender": "FEMALE",
-      "level": 75,
-      "nature": "modest",
-      "ability": "waterabsorb",
-      "heldItem": [
-        "leftovers"
-      ]
-    },
-    {
-      "moveset": [
-        "shadowball",
-        "willowisp",
-        "hex",
-        "tricklroom"
-      ],
-      "ivs": {
-        "spe": 31,
-        "spd": 31,
-        "spa": 31,
-        "def": 31,
-        "atk": 31,
-        "hp": 31
-      },
-      "evs": {
-        "spa": 252,
-        "hp": 252,
-        "def": 6
-      },
+      "evs": {},
       "species": "cofagrigus",
-      "gender": "GENDERLESS",
       "level": 75,
-      "nature": "quiet",
+      "nature": "bold",
       "ability": "mummify",
       "heldItem": [
         "leftovers"
-      ]
+      ],
+      "gender": "MALE"
     },
     {
       "moveset": [
         "shadowpunch",
         "earthquake",
         "icepunch",
-        "stoneedge"
+        "dynamicpunch"
       ],
       "ivs": {
         "spe": 31,
@@ -95,18 +62,13 @@
         "atk": 31,
         "hp": 31
       },
-      "evs": {
-        "atk": 252,
-        "hp": 252,
-        "spe": 6
-      },
+      "evs": {},
       "species": "golurk",
-      "gender": "GENDERLESS",
-      "level": 75,
+      "level": 76,
       "nature": "adamant",
       "ability": "ironfist",
       "heldItem": [
-        "expertbelt"
+        "choiceband"
       ]
     },
     {
@@ -114,7 +76,7 @@
         "shadowball",
         "thunderbolt",
         "ominouswind",
-        "minimize"
+        "batonpass"
       ],
       "ivs": {
         "spe": 31,
@@ -124,26 +86,72 @@
         "atk": 31,
         "hp": 31
       },
-      "evs": {
-        "spa": 252,
-        "spe": 252,
-        "hp": 6
-      },
+      "evs": {},
       "species": "drifblim",
-      "gender": "MALE",
-      "level": 75,
-      "nature": "timid",
+      "level": 77,
+      "nature": "modest",
       "ability": "unburden",
       "heldItem": [
-        "sitrusberry"
-      ]
+        "airballoon"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "shadowball",
+        "icebeam",
+        "destinybond",
+        "thunderwave"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "froslass",
+      "level": 78,
+      "nature": "timid",
+      "ability": "snowcloak",
+      "heldItem": [
+        "focussash"
+      ],
+      "gender": "FEMALE"
+    },
+    {
+      "moveset": [
+        "shadowball",
+        "psychic",
+        "calmmind",
+        "nastyplot"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "mismagius",
+      "level": 79,
+      "nature": "timid",
+      "ability": "levitate",
+      "heldItem": [
+        "wisporb"
+      ],
+      "gender": "FEMALE"
     },
     {
       "moveset": [
         "shadowball",
         "flamethrower",
         "energyball",
-        "tricklroom"
+        "willowisp"
       ],
       "ivs": {
         "spe": 31,
@@ -153,48 +161,15 @@
         "atk": 31,
         "hp": 31
       },
-      "evs": {
-        "spa": 252,
-        "spe": 252,
-        "hp": 6
-      },
+      "evs": {},
       "species": "chandelure",
-      "gender": "GENDERLESS",
-      "level": 75,
+      "level": 80,
       "nature": "modest",
       "ability": "flashfire",
       "heldItem": [
-        "wiseglasses"
-      ]
-    },
-    {
-      "moveset": [
-        "shadowball",
-        "icebeam",
-        "thunderwave",
-        "destinybond"
+        "choicescarf"
       ],
-      "ivs": {
-        "spe": 31,
-        "spd": 31,
-        "spa": 31,
-        "def": 31,
-        "atk": 31,
-        "hp": 31
-      },
-      "evs": {
-        "spa": 252,
-        "spe": 252,
-        "hp": 6
-      },
-      "species": "froslass",
-      "gender": "FEMALE",
-      "level": 75,
-      "nature": "timid",
-      "ability": "snowcloak",
-      "heldItem": [
-        "focussash"
-      ]
+      "gender": "MALE"
     }
   ],
   "battleFormat": "GEN_9_SINGLES"

@@ -24,59 +24,9 @@
   "team": [
     {
       "moveset": [
-        "iciclespear",
-        "mirrorshot",
-        "taunt",
-        "frostbreath"
-      ],
-      "ivs": {
-        "spe": 31,
-        "spd": 31,
-        "spa": 31,
-        "def": 31,
-        "atk": 31,
-        "hp": 31
-      },
-      "evs": {},
-      "species": "vanillish",
-      "gender": "MALE",
-      "level": 62,
-      "nature": "timid",
-      "ability": "iceicebody",
-      "heldItem": [
-        "laxincense"
-      ]
-    },
-    {
-      "moveset": [
-        "icebeam",
-        "reflect",
-        "recover",
-        "nightslash"
-      ],
-      "ivs": {
-        "spe": 31,
-        "spd": 31,
-        "spa": 31,
-        "def": 31,
-        "atk": 31,
-        "hp": 31
-      },
-      "evs": {},
-      "species": "cryogonal",
-      "gender": "GENDERLESS",
-      "level": 63,
-      "nature": "timid",
-      "ability": "levitate",
-      "heldItem": [
-        "leftovers"
-      ]
-    },
-    {
-      "moveset": [
         "blizzard",
-        "shadowclaw",
-        "earthquake",
+        "waterpulse",
+        "mirrorcoat",
         "hail"
       ],
       "ivs": {
@@ -88,14 +38,113 @@
         "hp": 31
       },
       "evs": {},
-      "species": "beartic",
-      "gender": "MALE",
-      "level": 65,
-      "nature": "adamant",
-      "ability": "iceicebody",
+      "species": "vanillish",
+      "level": 57,
+      "nature": "modest",
+      "ability": "iceBody",
       "heldItem": [
-        "focussash"
+        "nevermeltice"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "blizzard",
+        "icebeam",
+        "recover",
+        "reflectice"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "cryogonal",
+      "level": 58,
+      "nature": "timid",
+      "ability": "levitate",
+      "heldItem": [
+        "nevermeltice"
       ]
+    },
+    {
+      "moveset": [
+        "iciclecrash",
+        "superpower",
+        "aquajet",
+        "swordsdance"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "beartic",
+      "level": 58,
+      "nature": "adamant",
+      "ability": "swiftswim",
+      "heldItem": [
+        "choiceband"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "iciclespear",
+        "rockblast",
+        "shellsmash",
+        "razorshell"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "cloyster",
+      "level": 59,
+      "nature": "jolly",
+      "ability": "skilllink",
+      "heldItem": [
+        "whiteherb"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "blizzard",
+        "surf",
+        "thunderbolt",
+        "confuseray"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "lapras",
+      "level": 60,
+      "nature": "modest",
+      "ability": "waterabsorb",
+      "heldItem": [
+        "mysticwater"
+      ],
+      "gender": "FEMALE"
     }
   ],
   "battleFormat": "GEN_9_SINGLES"

@@ -1,0 +1,25 @@
+{
+  "series": [
+    "unys_bw2"
+  ],
+  "biomeTagBlacklist": [
+    "is_void",
+    "is_nether",
+    "is_end",
+    "is_underground"
+  ],
+  "biomeTagWhitelist": [
+    "cobblemon:is_badlands"
+  ],
+  "type": "unys_bw2",
+  "signatureItem": "cobblemon:soft_sand",
+  "maxTrainerWins": -1,
+  "maxTrainerDefeats": 1,
+  "battleCooldownTicks": 240,
+  "spawnWeightFactor": 0,
+  "requiredDefeats": [
+    [
+      "unys_bw2_inezia"
+    ]
+  ]
+}

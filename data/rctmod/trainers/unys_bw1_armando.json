@@ -13,21 +13,21 @@
     }
   },
   "battleRules": {
-    "maxItemUses": 1
+    "maxItemUses": 3
   },
   "bag": [
     {
       "item": "cobblemon:potion",
-      "quantity": 1
+      "quantity": 3
     }
   ],
   "team": [
     {
       "moveset": [
-        "ember",
-        "smog",
         "flamecharge",
-        "leer"
+        "rollout",
+        "smog",
+        "tackle"
       ],
       "ivs": {
         "spe": 31,
@@ -39,42 +39,20 @@
       },
       "evs": {},
       "species": "tepig",
-      "gender": "MALE",
-      "level": 14,
+      "level": 16,
       "nature": "adamant",
-      "ability": "blaze"
-    },
-    {
-      "moveset": [
-        "ember",
-        "firespin",
-        "bite",
-        "sandattack"
-      ],
-      "ivs": {
-        "spe": 31,
-        "spd": 31,
-        "spa": 31,
-        "def": 31,
-        "atk": 31,
-        "hp": 31
-      },
-      "evs": {},
-      "species": "vulpix",
-      "gender": "MALE",
-      "level": 15,
-      "nature": "modest",
-      "ability": "flashfire",
+      "ability": "blaze",
       "heldItem": [
-        "oranberry"
-      ]
+        "charcoal"
+      ],
+      "gender": "MALE"
     },
     {
       "moveset": [
-        "flamecharge",
-        "workup",
-        "ember",
-        "leer"
+        "incinerate",
+        "taunt",
+        "scratch",
+        "nastyplot"
       ],
       "ivs": {
         "spe": 31,
@@ -86,13 +64,38 @@
       },
       "evs": {},
       "species": "pansear",
-      "gender": "MALE",
       "level": 17,
-      "nature": "adamant",
+      "nature": "timid",
       "ability": "gluttony",
       "heldItem": [
-        "focussash"
-      ]
+        "sitrusberry"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "flamethrower",
+        "bite",
+        "roar",
+        "agility"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "growlithe",
+      "level": 18,
+      "nature": "adamant",
+      "ability": "flashfire",
+      "heldItem": [
+        "charcoal"
+      ],
+      "gender": "MALE"
     }
   ],
   "battleFormat": "GEN_9_SINGLES"

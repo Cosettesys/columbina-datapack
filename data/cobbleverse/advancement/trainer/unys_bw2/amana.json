@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "id": "cobblemon:mystic_water"
+    },
+    "title": {
+      "text": "Arène 8 — Amana"
+    },
+    "description": {
+      "text": "Défais Amana (Eau)"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "cobbleverse:trainer/unys_bw2/watson",
+  "criteria": {
+    "requirement": {
+      "trigger": "rctmod:trainer_defeated",
+      "conditions": {
+        "trainer": "unys_bw2_amana"
+      }
+    }
+  },
+  "rewards": {
+    "function": "cobbleverse:unys_bw2_amana_defeated"
+  }
+}

@@ -13,165 +13,20 @@
     }
   },
   "battleRules": {
-    "maxItemUses": 6
+    "maxItemUses": 3
   },
   "bag": [
     {
       "item": "cobblemon:full_restore",
-      "quantity": 6
+      "quantity": 3
     }
   ],
   "team": [
     {
       "moveset": [
-        "highjumpkick",
-        "uturn",
+        "closecombat",
         "stoneedge",
-        "icepunch"
-      ],
-      "ivs": {
-        "spe": 31,
-        "spd": 31,
-        "spa": 31,
-        "def": 31,
-        "atk": 31,
-        "hp": 31
-      },
-      "evs": {
-        "atk": 252,
-        "spe": 252,
-        "hp": 6
-      },
-      "species": "mienshao",
-      "gender": "MALE",
-      "level": 85,
-      "nature": "jolly",
-      "ability": "regenerator",
-      "heldItem": [
-        "choicescarf"
-      ]
-    },
-    {
-      "moveset": [
-        "drainpunch",
-        "machpunch",
         "icepunch",
-        "thunderpunch"
-      ],
-      "ivs": {
-        "spe": 31,
-        "spd": 31,
-        "spa": 31,
-        "def": 31,
-        "atk": 31,
-        "hp": 31
-      },
-      "evs": {
-        "atk": 252,
-        "hp": 252,
-        "def": 6
-      },
-      "species": "conkeldurr",
-      "gender": "MALE",
-      "level": 85,
-      "nature": "adamant",
-      "ability": "guts",
-      "heldItem": [
-        "assaultvest"
-      ]
-    },
-    {
-      "moveset": [
-        "crosschop",
-        "suckerpunch",
-        "gunkshot",
-        "swordsdance"
-      ],
-      "ivs": {
-        "spe": 31,
-        "spd": 31,
-        "spa": 31,
-        "def": 31,
-        "atk": 31,
-        "hp": 31
-      },
-      "evs": {
-        "atk": 252,
-        "spe": 252,
-        "hp": 6
-      },
-      "species": "toxicroak",
-      "gender": "MALE",
-      "level": 85,
-      "nature": "jolly",
-      "ability": "dryskin",
-      "heldItem": [
-        "lifeorb"
-      ]
-    },
-    {
-      "moveset": [
-        "flareblitz",
-        "highjumpkick",
-        "wildcharge",
-        "headsmash"
-      ],
-      "ivs": {
-        "spe": 31,
-        "spd": 31,
-        "spa": 31,
-        "def": 31,
-        "atk": 31,
-        "hp": 31
-      },
-      "evs": {
-        "atk": 252,
-        "spe": 252,
-        "hp": 6
-      },
-      "species": "emboar",
-      "gender": "MALE",
-      "level": 85,
-      "nature": "adamant",
-      "ability": "reckless",
-      "heldItem": [
-        "choiceband"
-      ]
-    },
-    {
-      "moveset": [
-        "closecombat",
-        "stoneedge",
-        "earthquake",
-        "icepunch"
-      ],
-      "ivs": {
-        "spe": 31,
-        "spd": 31,
-        "spa": 31,
-        "def": 31,
-        "atk": 31,
-        "hp": 31
-      },
-      "evs": {
-        "atk": 252,
-        "spe": 252,
-        "hp": 6
-      },
-      "species": "sawk",
-      "gender": "MALE",
-      "level": 85,
-      "nature": "adamant",
-      "ability": "sturdy",
-      "heldItem": [
-        "focussash"
-      ]
-    },
-    {
-      "moveset": [
-        "closecombat",
-        "stoneedge",
-        "xscissor",
         "earthquake"
       ],
       "ivs": {
@@ -182,14 +37,134 @@
         "atk": 31,
         "hp": 31
       },
-      "evs": {
-        "atk": 252,
-        "spe": 252,
-        "hp": 6
+      "evs": {},
+      "species": "sawk",
+      "level": 90,
+      "nature": "jolly",
+      "ability": "sturdy",
+      "heldItem": [
+        "choiceband"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "seismictoss",
+        "stormthrow",
+        "bulkup",
+        "payback"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
       },
+      "evs": {},
+      "species": "throh",
+      "level": 91,
+      "nature": "adamant",
+      "ability": "guts",
+      "heldItem": [
+        "flameorb"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "suckerpunch",
+        "gunkshot",
+        "drainpunch",
+        "swordsdance"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "toxicroak",
+      "level": 92,
+      "nature": "jolly",
+      "ability": "dryskin",
+      "heldItem": [
+        "lifeorb"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "drainpunch",
+        "icepunch",
+        "machpunch",
+        "stoneedge"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "conkeldurr",
+      "level": 93,
+      "nature": "adamant",
+      "ability": "guts",
+      "heldItem": [
+        "flameorb"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "highjumpkick",
+        "uturn",
+        "stoneedge",
+        "swordsdance"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "mienshao",
+      "level": 94,
+      "nature": "jolly",
+      "ability": "regenerator",
+      "heldItem": [
+        "lifeorb"
+      ],
+      "gender": "FEMALE"
+    },
+    {
+      "moveset": [
+        "closecombat",
+        "stoneedge",
+        "swordsdance",
+        "xscissor"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
       "species": "terrakion",
-      "gender": "GENDERLESS",
-      "level": 85,
+      "level": 95,
       "nature": "jolly",
       "ability": "justified",
       "heldItem": [

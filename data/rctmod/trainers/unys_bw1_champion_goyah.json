@@ -13,136 +13,20 @@
     }
   },
   "battleRules": {
-    "maxItemUses": 6
+    "maxItemUses": 3
   },
   "bag": [
     {
       "item": "cobblemon:full_restore",
-      "quantity": 6
+      "quantity": 3
     }
   ],
   "team": [
     {
       "moveset": [
+        "fierydance",
         "bugbuzz",
-        "focusblast",
-        "gigadrain",
-        "spikyshield"
-      ],
-      "ivs": {
-        "spe": 31,
-        "spd": 31,
-        "spa": 31,
-        "def": 31,
-        "atk": 31,
-        "hp": 31
-      },
-      "evs": {
-        "spa": 252,
-        "spe": 252,
-        "hp": 6
-      },
-      "species": "accelgor",
-      "gender": "GENDERLESS",
-      "level": 100,
-      "nature": "timid",
-      "ability": "stickhold",
-      "heldItem": [
-        "focussash"
-      ]
-    },
-    {
-      "moveset": [
-        "earthquake",
-        "outrage",
-        "dragondance",
-        "stoneedge"
-      ],
-      "ivs": {
-        "spe": 31,
-        "spd": 31,
-        "spa": 31,
-        "def": 31,
-        "atk": 31,
-        "hp": 31
-      },
-      "evs": {
-        "atk": 252,
-        "spe": 252,
-        "hp": 6
-      },
-      "species": "garchomp",
-      "gender": "MALE",
-      "level": 100,
-      "nature": "jolly",
-      "ability": "roughskin",
-      "heldItem": [
-        "lumberry"
-      ]
-    },
-    {
-      "moveset": [
-        "ironhead",
-        "megahorn",
-        "swordsdance",
-        "drillrun"
-      ],
-      "ivs": {
-        "spe": 31,
-        "spd": 31,
-        "spa": 31,
-        "def": 31,
-        "atk": 31,
-        "hp": 31
-      },
-      "evs": {
-        "atk": 252,
-        "hp": 252,
-        "def": 6
-      },
-      "species": "escavalier",
-      "gender": "MALE",
-      "level": 100,
-      "nature": "adamant",
-      "ability": "overcoat",
-      "heldItem": [
-        "assaultvest"
-      ]
-    },
-    {
-      "moveset": [
-        "shadowball",
-        "flamethrower",
-        "energyball",
-        "trickroom"
-      ],
-      "ivs": {
-        "spe": 31,
-        "spd": 31,
-        "spa": 31,
-        "def": 31,
-        "atk": 31,
-        "hp": 31
-      },
-      "evs": {
-        "spa": 252,
-        "spe": 252,
-        "hp": 6
-      },
-      "species": "chandelure",
-      "gender": "GENDERLESS",
-      "level": 100,
-      "nature": "modest",
-      "ability": "flashfire",
-      "heldItem": [
-        "choicespecs"
-      ]
-    },
-    {
-      "moveset": [
         "quiverdance",
-        "fireblast",
-        "bugbuzz",
         "gigadrain"
       ],
       "ivs": {
@@ -153,26 +37,22 @@
         "atk": 31,
         "hp": 31
       },
-      "evs": {
-        "spa": 252,
-        "spe": 252,
-        "hp": 6
-      },
+      "evs": {},
       "species": "volcarona",
-      "gender": "GENDERLESS",
       "level": 100,
-      "nature": "timid",
-      "ability": "flamebody",
+      "nature": "modest",
+      "ability": "flameBody",
       "heldItem": [
-        "leftovers"
-      ]
+        "lifeorb"
+      ],
+      "gender": "MALE"
     },
     {
       "moveset": [
-        "headcharge",
-        "earthquake",
-        "stoneedge",
-        "megahorn"
+        "shadowball",
+        "flamethrower",
+        "energyball",
+        "tricksroom"
       ],
       "ivs": {
         "spe": 31,
@@ -182,19 +62,115 @@
         "atk": 31,
         "hp": 31
       },
-      "evs": {
-        "atk": 252,
-        "hp": 252,
-        "spe": 6
-      },
-      "species": "bouffalant",
-      "gender": "MALE",
+      "evs": {},
+      "species": "chandelure",
       "level": 100,
-      "nature": "adamant",
-      "ability": "reckless",
+      "nature": "modest",
+      "ability": "flashfire",
+      "heldItem": [
+        "choicescarf"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "megahorn",
+        "ironhead",
+        "knockoff",
+        "swordsdance"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "escavalier",
+      "level": 100,
+      "nature": "brave",
+      "ability": "overcoat",
       "heldItem": [
         "choiceband"
-      ]
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "earthquake",
+        "outrage",
+        "swordsdance",
+        "stoneedge"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "garchomp",
+      "level": 100,
+      "nature": "jolly",
+      "ability": "roughskin",
+      "heldItem": [
+        "rockyhelmet"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "headcharge",
+        "earthquake",
+        "megahorn",
+        "stoneedge"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "bouffalant",
+      "level": 100,
+      "nature": "adamant",
+      "ability": "sapsipper",
+      "heldItem": [
+        "assaultvest"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "bugbuzz",
+        "focusblast",
+        "shadowball",
+        "encore"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "accelgor",
+      "level": 100,
+      "nature": "timid",
+      "ability": "stickyhold",
+      "heldItem": [
+        "focussash"
+      ],
+      "gender": "MALE"
     }
   ],
   "battleFormat": "GEN_9_SINGLES"

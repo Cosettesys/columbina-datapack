@@ -13,21 +13,21 @@
     }
   },
   "battleRules": {
-    "maxItemUses": 6
+    "maxItemUses": 3
   },
   "bag": [
     {
       "item": "cobblemon:full_restore",
-      "quantity": 6
+      "quantity": 3
     }
   ],
   "team": [
     {
       "moveset": [
-        "darkpulse",
-        "dragonpulse",
-        "flamethrower",
-        "earthpower"
+        "crunch",
+        "highjumpkick",
+        "icepunch",
+        "dragondance"
       ],
       "ivs": {
         "spe": 31,
@@ -37,26 +37,97 @@
         "atk": 31,
         "hp": 31
       },
-      "evs": {
-        "spa": 252,
-        "spe": 252,
-        "hp": 6
-      },
-      "species": "hydreigon",
-      "gender": "MALE",
+      "evs": {},
+      "species": "scrafty",
       "level": 80,
-      "nature": "modest",
-      "ability": "levitate",
+      "nature": "adamant",
+      "ability": "moxie",
       "heldItem": [
-        "choicespecs"
-      ]
+        "lumberry"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "foulplay",
+        "roost",
+        "whirlwind",
+        "toxic"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "mandibuzz",
+      "level": 81,
+      "nature": "bold",
+      "ability": "overcoat",
+      "heldItem": [
+        "leftovers"
+      ],
+      "gender": "FEMALE"
+    },
+    {
+      "moveset": [
+        "nightdaze",
+        "flamethrower",
+        "focusblast",
+        "nastyplot"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "zoroark",
+      "level": 82,
+      "nature": "timid",
+      "ability": "illusion",
+      "heldItem": [
+        "lifeorb"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "nightslash",
+        "bravebird",
+        "superpower",
+        "roost"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "honchkrow",
+      "level": 83,
+      "nature": "adamant",
+      "ability": "moxie",
+      "heldItem": [
+        "lifeorb"
+      ],
+      "gender": "MALE"
     },
     {
       "moveset": [
         "crunch",
         "earthquake",
         "stoneedge",
-        "outrage"
+        "dragonclaw"
       ],
       "ivs": {
         "spe": 31,
@@ -66,26 +137,22 @@
         "atk": 31,
         "hp": 31
       },
-      "evs": {
-        "atk": 252,
-        "spe": 252,
-        "hp": 6
-      },
+      "evs": {},
       "species": "krookodile",
-      "gender": "MALE",
-      "level": 80,
+      "level": 84,
       "nature": "jolly",
-      "ability": "intimidate",
+      "ability": "moxie",
       "heldItem": [
-        "expertbelt"
-      ]
+        "choiceband"
+      ],
+      "gender": "MALE"
     },
     {
       "moveset": [
-        "nightslash",
-        "closecombat",
+        "dragonpulse",
+        "darkpulse",
         "flamethrower",
-        "grassknot"
+        "focusblast"
       ],
       "ivs": {
         "spe": 31,
@@ -95,106 +162,15 @@
         "atk": 31,
         "hp": 31
       },
-      "evs": {
-        "atk": 252,
-        "spe": 252,
-        "hp": 6
-      },
-      "species": "zoroark",
-      "gender": "MALE",
-      "level": 80,
-      "nature": "hasty",
-      "ability": "illusion",
+      "evs": {},
+      "species": "hydreigon",
+      "level": 85,
+      "nature": "modest",
+      "ability": "levitate",
       "heldItem": [
-        "lifeorb"
-      ]
-    },
-    {
-      "moveset": [
-        "crunch",
-        "highjumpkick",
-        "dragondance",
-        "ironhead"
+        "choicescarf"
       ],
-      "ivs": {
-        "spe": 31,
-        "spd": 31,
-        "spa": 31,
-        "def": 31,
-        "atk": 31,
-        "hp": 31
-      },
-      "evs": {
-        "atk": 252,
-        "spe": 252,
-        "hp": 6
-      },
-      "species": "scrafty",
-      "gender": "MALE",
-      "level": 80,
-      "nature": "jolly",
-      "ability": "moxie",
-      "heldItem": [
-        "lumberry"
-      ]
-    },
-    {
-      "moveset": [
-        "foulplay",
-        "roost",
-        "taunt",
-        "whirlwind"
-      ],
-      "ivs": {
-        "spe": 31,
-        "spd": 31,
-        "spa": 31,
-        "def": 31,
-        "atk": 31,
-        "hp": 31
-      },
-      "evs": {
-        "spd": 252,
-        "hp": 252,
-        "def": 6
-      },
-      "species": "mandibuzz",
-      "gender": "FEMALE",
-      "level": 80,
-      "nature": "careful",
-      "ability": "overcoat",
-      "heldItem": [
-        "leftovers"
-      ]
-    },
-    {
-      "moveset": [
-        "nightslash",
-        "bravebird",
-        "suckerpunch",
-        "thunderwave"
-      ],
-      "ivs": {
-        "spe": 31,
-        "spd": 31,
-        "spa": 31,
-        "def": 31,
-        "atk": 31,
-        "hp": 31
-      },
-      "evs": {
-        "atk": 252,
-        "spe": 252,
-        "hp": 6
-      },
-      "species": "honchkrow",
-      "gender": "MALE",
-      "level": 80,
-      "nature": "adamant",
-      "ability": "moxie",
-      "heldItem": [
-        "scopelens"
-      ]
+      "gender": "MALE"
     }
   ],
   "battleFormat": "GEN_9_SINGLES"

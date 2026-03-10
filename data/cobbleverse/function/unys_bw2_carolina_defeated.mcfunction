@@ -1,0 +1,1 @@
+tellraw @s ["",{"text":"  Félicitations !","bold":true,"color":"gold"},"\n","Tu as vaincu ",{"text":"Carolina","bold":true,"color":"#6890f0"},{"text":" et obtenu le "},{"text":"Badge Jet","bold":true,"color":"yellow"},{"text":"!"}]

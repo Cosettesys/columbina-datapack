@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "id": "cobblemon:soft_sand"
+    },
+    "title": {
+      "text": "Arène 5 — Bardane"
+    },
+    "description": {
+      "text": "Défais Bardane (Sol)"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "cobbleverse:trainer/unys_bw2/inezia",
+  "criteria": {
+    "requirement": {
+      "trigger": "rctmod:trainer_defeated",
+      "conditions": {
+        "trainer": "unys_bw2_bardane"
+      }
+    }
+  },
+  "rewards": {
+    "function": "cobbleverse:unys_bw2_bardane_defeated"
+  }
+}

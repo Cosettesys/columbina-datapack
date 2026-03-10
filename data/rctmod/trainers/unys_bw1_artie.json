@@ -13,20 +13,45 @@
     }
   },
   "battleRules": {
-    "maxItemUses": 2
+    "maxItemUses": 3
   },
   "bag": [
     {
       "item": "cobblemon:super_potion",
-      "quantity": 2
+      "quantity": 3
     }
   ],
   "team": [
     {
       "moveset": [
+        "razorleaf",
+        "stringshot",
+        "protect",
+        "synthesis"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "swadloon",
+      "level": 32,
+      "nature": "bold",
+      "ability": "overcoat",
+      "heldItem": [
+        "miracleseed"
+      ],
+      "gender": "MALE"
+    },
+    {
+      "moveset": [
+        "rollout",
         "poisontail",
-        "steamroller",
-        "venoshock",
+        "irondefense",
         "protect"
       ],
       "ivs": {
@@ -39,19 +64,19 @@
       },
       "evs": {},
       "species": "whirlipede",
-      "gender": "MALE",
       "level": 33,
       "nature": "jolly",
       "ability": "swarm",
       "heldItem": [
-        "rockyhelmet"
-      ]
+        "poisonbarb"
+      ],
+      "gender": "MALE"
     },
     {
       "moveset": [
+        "rockslide",
+        "xscissor",
         "smackdown",
-        "rockblast",
-        "bugbite",
         "stealthrock"
       ],
       "ivs": {
@@ -64,20 +89,20 @@
       },
       "evs": {},
       "species": "dwebble",
-      "gender": "MALE",
-      "level": 33,
+      "level": 34,
       "nature": "impish",
-      "ability": "weakarmor",
+      "ability": "sturdy",
       "heldItem": [
-        "shellbell"
-      ]
+        "hardstone"
+      ],
+      "gender": "MALE"
     },
     {
       "moveset": [
-        "leafblade",
         "xscissor",
+        "leafblade",
         "swordsdance",
-        "slash"
+        "shadowclaw"
       ],
       "ivs": {
         "spe": 31,
@@ -89,13 +114,13 @@
       },
       "evs": {},
       "species": "leavanny",
-      "gender": "MALE",
-      "level": 36,
-      "nature": "jolly",
+      "level": 35,
+      "nature": "adamant",
       "ability": "swarm",
       "heldItem": [
-        "focussash"
-      ]
+        "lumberry"
+      ],
+      "gender": "MALE"
     }
   ],
   "battleFormat": "GEN_9_SINGLES"

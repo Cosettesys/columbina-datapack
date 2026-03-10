@@ -13,12 +13,12 @@
     }
   },
   "battleRules": {
-    "maxItemUses": 2
+    "maxItemUses": 3
   },
   "bag": [
     {
       "item": "cobblemon:super_potion",
-      "quantity": 2
+      "quantity": 3
     }
   ],
   "team": [
@@ -39,20 +39,20 @@
       },
       "evs": {},
       "species": "emolga",
-      "gender": "FEMALE",
-      "level": 40,
+      "level": 38,
       "nature": "timid",
       "ability": "motoredrive",
       "heldItem": [
         "scopelens"
-      ]
+      ],
+      "gender": "FEMALE"
     },
     {
       "moveset": [
+        "thunderbolt",
+        "cottonguard",
         "voltswitch",
-        "aerialace",
-        "encore",
-        "attract"
+        "powerjem"
       ],
       "ivs": {
         "spe": 31,
@@ -63,21 +63,46 @@
         "hp": 31
       },
       "evs": {},
-      "species": "emolga",
-      "gender": "FEMALE",
-      "level": 40,
-      "nature": "timid",
-      "ability": "motoredrive",
+      "species": "flaaffy",
+      "level": 39,
+      "nature": "modest",
+      "ability": "static",
       "heldItem": [
-        "scopelens"
-      ]
+        "amplifymeter"
+      ],
+      "gender": "FEMALE"
     },
     {
       "moveset": [
         "thunderbolt",
+        "nuzzle",
+        "superfang",
+        "batonpass"
+      ],
+      "ivs": {
+        "spe": 31,
+        "spd": 31,
+        "spa": 31,
+        "def": 31,
+        "atk": 31,
+        "hp": 31
+      },
+      "evs": {},
+      "species": "pachirisu",
+      "level": 39,
+      "nature": "timid",
+      "ability": "voltabsorb",
+      "heldItem": [
+        "oran_berry"
+      ],
+      "gender": "FEMALE"
+    },
+    {
+      "moveset": [
+        "wildcharge",
         "flamecharge",
-        "stomp",
-        "pursuit"
+        "thunderwave",
+        "stomp"
       ],
       "ivs": {
         "spe": 31,
@@ -89,13 +114,13 @@
       },
       "evs": {},
       "species": "zebstrika",
-      "gender": "FEMALE",
-      "level": 43,
+      "level": 40,
       "nature": "jolly",
       "ability": "lightningrod",
       "heldItem": [
         "magnet"
-      ]
+      ],
+      "gender": "FEMALE"
     }
   ],
   "battleFormat": "GEN_9_SINGLES"

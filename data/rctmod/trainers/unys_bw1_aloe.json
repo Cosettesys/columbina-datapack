@@ -13,21 +13,21 @@
     }
   },
   "battleRules": {
-    "maxItemUses": 2
+    "maxItemUses": 3
   },
   "bag": [
     {
-      "item": "cobblemon:super_potion",
-      "quantity": 2
+      "item": "cobblemon:potion",
+      "quantity": 3
     }
   ],
   "team": [
     {
       "moveset": [
-        "hypnosis",
+        "hyperfang",
         "superfang",
-        "bite",
-        "workup"
+        "meanlook",
+        "crunch"
       ],
       "ivs": {
         "spe": 31,
@@ -39,20 +39,20 @@
       },
       "evs": {},
       "species": "patrat",
-      "gender": "FEMALE",
-      "level": 24,
+      "level": 23,
       "nature": "jolly",
       "ability": "analytic",
       "heldItem": [
-        "oranberry"
-      ]
+        "cheriberry"
+      ],
+      "gender": "MALE"
     },
     {
       "moveset": [
-        "retaliate",
-        "attract",
-        "takedown",
-        "workup"
+        "hyperfang",
+        "superfang",
+        "thunderbolt",
+        "batonpass"
       ],
       "ivs": {
         "spe": 31,
@@ -64,20 +64,20 @@
       },
       "evs": {},
       "species": "watchog",
-      "gender": "FEMALE",
-      "level": 26,
+      "level": 24,
       "nature": "jolly",
-      "ability": "analytic",
+      "ability": "illuminate",
       "heldItem": [
-        "silkscarf"
-      ]
+        "leppaberry"
+      ],
+      "gender": "MALE"
     },
     {
       "moveset": [
-        "fakeout",
+        "doublehit",
+        "crunch",
         "bodyslam",
-        "suckerpunch",
-        "bulldoze"
+        "earthquake"
       ],
       "ivs": {
         "spe": 31,
@@ -89,13 +89,13 @@
       },
       "evs": {},
       "species": "kangaskhan",
-      "gender": "FEMALE",
-      "level": 27,
+      "level": 25,
       "nature": "adamant",
-      "ability": "scrappy",
+      "ability": "earlybird",
       "heldItem": [
-        "normalherb"
-      ]
+        "lumberry"
+      ],
+      "gender": "FEMALE"
     }
   ],
   "battleFormat": "GEN_9_SINGLES"

@@ -1,1 +1,4 @@
-tellraw @s ["",{"text":"  Félicitations !","bold":true,"color":"gold"},"\n","Tu as vaincu ",{"text":"Watson","bold":true,"color":"#1a6b9a"}," et obtenu le ",{"text":"Badge Dragon","bold":true,"color":"yellow"},"!"]
+# Watson (arène 8 BW1) vaincu
+tag @s add unys_bw1_watson_defeated
+rctmod player set defeats unys_bw1_iris @s 1
+tellraw @s ["",{"text":"[Unys BW1] ","bold":true,"color":"purple"},{"text":"Watson vaincu ! L'accès à la Ligue est déverrouillé.","color":"green"}]

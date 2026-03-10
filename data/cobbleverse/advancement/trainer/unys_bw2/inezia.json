@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "id": "cobblemon:magnet"
+    },
+    "title": {
+      "text": "Arène 4 — Inezia"
+    },
+    "description": {
+      "text": "Défais Inezia (Électrik)"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "cobbleverse:trainer/unys_bw2/artie",
+  "criteria": {
+    "requirement": {
+      "trigger": "rctmod:trainer_defeated",
+      "conditions": {
+        "trainer": "unys_bw2_inezia"
+      }
+    }
+  },
+  "rewards": {
+    "function": "cobbleverse:unys_bw2_inezia_defeated"
+  }
+}

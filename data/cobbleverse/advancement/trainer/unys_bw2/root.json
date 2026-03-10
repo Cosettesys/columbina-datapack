@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "cobblemon:poke_ball"
+    },
+    "title": {
+      "text": "Ligue d'Unys BW2"
+    },
+    "description": {
+      "text": "Commence la Ligue d'Unys — Noir & Blanc 2"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": {
+    "trigger": {
+      "trigger": "cobblemon:pick_starter"
+    }
+  }
+}

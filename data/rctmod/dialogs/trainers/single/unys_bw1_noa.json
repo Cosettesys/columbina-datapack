@@ -1,0 +1,55 @@
+{
+  "on_battle_start": [
+    {
+      "translatable": "dialogs.columbina.unys_bw1_noa.on_battle_start.0"
+    },
+    {
+      "translatable": "dialogs.columbina.unys_bw1_noa.on_battle_start.1"
+    }
+  ],
+  "on_battle_won": [
+    {
+      "translatable": "dialogs.columbina.unys_bw1_noa.on_battle_won.0"
+    }
+  ],
+  "trainer_lost": [
+    {
+      "translatable": "dialogs.columbina.unys_bw1_noa.trainer_lost.0"
+    }
+  ],
+  "missing_required_trainer": [
+    {
+      "translatable": "dialogs.columbina.unys_bw1_noa.missing_required_trainer.0"
+    }
+  ],
+  "low_level_cap": [
+    {
+      "translatable": "dialogs.columbina.unys_bw1_noa.low_level_cap.0"
+    }
+  ],
+  "over_level_cap": [
+    {
+      "translatable": "dialogs.columbina.unys_bw1_noa.over_level_cap.0"
+    }
+  ],
+  "on_cooldown": [
+    {
+      "translatable": "dialogs.columbina.unys_bw1_noa.on_cooldown.0"
+    }
+  ],
+  "trainer_won": [
+    {
+      "translatable": "dialogs.columbina.unys_bw1_noa.trainer_won.0"
+    }
+  ],
+  "missing_pokemon": [
+    {
+      "translatable": "dialogs.columbina.unys_bw1_noa.missing_pokemon.0"
+    }
+  ],
+  "wrong_series": [
+    {
+      "translatable": "dialogs.columbina.unys_bw1_noa.wrong_series.0"
+    }
+  ]
+}

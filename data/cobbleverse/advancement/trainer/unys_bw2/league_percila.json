@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "id": "cobblemon:twisted_spoon"
+    },
+    "title": {
+      "text": "Conseil — Percila"
+    },
+    "description": {
+      "text": "Défais Percila (Psy)"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "cobbleverse:trainer/unys_bw2/amana",
+  "criteria": {
+    "requirement": {
+      "trigger": "rctmod:trainer_defeated",
+      "conditions": {
+        "trainer": "unys_bw2_league_percila"
+      }
+    }
+  },
+  "rewards": {
+    "function": "cobbleverse:unys_bw2_league_percila_defeated"
+  }
+}
