@@ -1,0 +1,1 @@
+tellraw @s ["",{"text":"  CHAMPION(NE) !","bold":true,"color":"gold"},"\n","Tu as vaincu ",{"text":"Iris","bold":true,"color":"#e8c000"}," et remporte la Ligue ",{"text":"Unys BW2","bold":true,"color":"white"}," !"]

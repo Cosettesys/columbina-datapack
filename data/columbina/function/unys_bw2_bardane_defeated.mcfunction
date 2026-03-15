@@ -1,0 +1,1 @@
+tellraw @s ["",{"text":"  Felicitations !","bold":true,"color":"gold"},"\n","Tu as vaincu ",{"text":"Bardane","bold":true,"color":"#c9a84c"}," et obtenu le ",{"text":"Badge Seisme","bold":true,"color":"yellow"},"!"]

@@ -1,0 +1,1 @@
+tellraw @s ["",{"text":"  Felicitations !","bold":true,"color":"gold"},"\n","Tu as vaincu ",{"text":"Aloe","bold":true,"color":"#a0a070"}," et obtenu le ",{"text":"Badge Basic","bold":true,"color":"yellow"},"!"]

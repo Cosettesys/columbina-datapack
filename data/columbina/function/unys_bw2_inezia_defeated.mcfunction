@@ -1,0 +1,1 @@
+tellraw @s ["",{"text":"  Felicitations !","bold":true,"color":"gold"},"\n","Tu as vaincu ",{"text":"Inezia","bold":true,"color":"#f5d200"}," et obtenu le ",{"text":"Badge Volt","bold":true,"color":"yellow"},"!"]

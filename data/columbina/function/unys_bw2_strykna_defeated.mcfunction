@@ -1,0 +1,1 @@
+tellraw @s ["",{"text":"  Felicitations !","bold":true,"color":"gold"},"\n","Tu as vaincu ",{"text":"Strykna","bold":true,"color":"#9b5096"}," et obtenu le ",{"text":"Badge Poison","bold":true,"color":"yellow"},"!"]

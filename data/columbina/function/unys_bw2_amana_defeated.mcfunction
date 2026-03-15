@@ -1,0 +1,1 @@
+tellraw @s ["",{"text":"  Felicitations !","bold":true,"color":"gold"},"\n","Tu as vaincu ",{"text":"Amana","bold":true,"color":"#4d90d5"}," et obtenu le ",{"text":"Badge Surf","bold":true,"color":"yellow"},"!"]

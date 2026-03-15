@@ -1,0 +1,1 @@
+tellraw @s ["",{"text":"  Felicitations !","bold":true,"color":"gold"},"\n","Tu as vaincu ",{"text":"Carolina","bold":true,"color":"#7eb4e8"}," et obtenu le ",{"text":"Badge Plume","bold":true,"color":"yellow"},"!"]

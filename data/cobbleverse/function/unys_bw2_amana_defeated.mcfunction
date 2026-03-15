@@ -1,1 +1,0 @@
-tellraw @s ["",{"text":"  Félicitations !","bold":true,"color":"gold"},"\n","Tu as vaincu ",{"text":"Amana","bold":true,"color":"#6890f0"},{"text":" et obtenu le "},{"text":"Badge Vague","bold":true,"color":"yellow"},{"text":"!"}]

@@ -1,0 +1,1 @@
+tellraw @s ["",{"text":"  Felicitations !","bold":true,"color":"gold"},"\n","Tu as vaincu ",{"text":"Zhu","bold":true,"color":"#74cec0"}," et obtenu le ",{"text":"Badge Glace","bold":true,"color":"yellow"},"!"]
